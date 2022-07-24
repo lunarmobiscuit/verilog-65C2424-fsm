@@ -1,0 +1,1953 @@
+DESIGN TIME PRECISION: 10e0
+PACKAGES:
+SCOPES:
+cpu module <cpu> instance 3 children, 0 classes
+    timescale = 10e0 / 10e0
+    parameter <no_type> ABS0 = 6'd6;
+    parameter <no_type> ABS1 = 6'd7;
+    parameter <no_type> ABSR = 6'd44;
+    parameter <no_type> ABSW = 6'd35;
+    parameter <no_type> ABW0 = 6'd28;
+    parameter <no_type> ABW1 = 6'd29;
+    parameter <no_type> ABWW = 6'd36;
+    parameter <no_type> AB_16 = 2'd0;
+    parameter <no_type> AB_24 = 2'd1;
+    parameter <no_type> AB_32 = 2'd2;
+    parameter <no_type> AB_48 = 2'd3;
+    parameter <no_type> AB_ABSX = 10'd658;
+    parameter <no_type> AB_BACK = 10'd812;
+    parameter <no_type> AB_FWRD = 10'd556;
+    parameter <no_type> AB_HOLD = 10'd536;
+    parameter <no_type> AB_INCR = 10'd665;
+    parameter <no_type> AB_IRQV = 10'd352;
+    parameter <no_type> AB_JMP0 = 10'd562;
+    parameter <no_type> AB_JMP1 = 10'd561;
+    parameter <no_type> AB_NEXT = 10'd537;
+    parameter <no_type> AB_NMIV = 10'd320;
+    parameter <no_type> AB_OPER = 10'd40;
+    parameter <no_type> AB_PULL = 10'd257;
+    parameter <no_type> AB_PUSH = 10'd256;
+    parameter <no_type> AB_ZPGX = 10'd134;
+    parameter <no_type> ALU_ADC = 9'd6;
+    parameter <no_type> ALU_AND = 9'd80;
+    parameter <no_type> ALU_ASLA = 9'd256;
+    parameter <no_type> ALU_ASLM = 9'd272;
+    parameter <no_type> ALU_CMP = 9'd13;
+    parameter <no_type> ALU_DECA = 9'd8;
+    parameter <no_type> ALU_DECM = 9'd24;
+    parameter <no_type> ALU_EOR = 9'd96;
+    parameter <no_type> ALU_INCA = 9'd1;
+    parameter <no_type> ALU_INCM = 9'd17;
+    parameter <no_type> ALU_LDA = 9'd16;
+    parameter <no_type> ALU_LSRA = 9'd384;
+    parameter <no_type> ALU_LSRM = 9'd400;
+    parameter <no_type> ALU_ORA = 9'd64;
+    parameter <no_type> ALU_PLA = 9'b01xxxxxxx;
+    parameter <no_type> ALU_REG = 9'd0;
+    parameter <no_type> ALU_ROLA = 9'd259;
+    parameter <no_type> ALU_ROLM = 9'd275;
+    parameter <no_type> ALU_RORA = 9'd387;
+    parameter <no_type> ALU_RORM = 9'd403;
+    parameter <no_type> ALU_SBC = 9'd14;
+    parameter <no_type> ALU_TSX = 9'd112;
+    parameter <no_type> ALU_____ = 9'bxxxxxxxxx;
+    parameter <no_type> BRA0 = 6'd8;
+    parameter <no_type> BRK0 = 6'd20;
+    parameter <no_type> BRK1 = 6'd21;
+    parameter <no_type> BRK2 = 6'd22;
+    parameter <no_type> BRK3 = 6'd23;
+    parameter <no_type> BRK4 = 6'd32;
+    parameter <no_type> DATA = 6'd5;
+    parameter <no_type> DO_ALU = 3'd0;
+    parameter <no_type> DO_PC3 = 3'd4;
+    parameter <no_type> DO_PCH = 3'd2;
+    parameter <no_type> DO_PCL = 3'd1;
+    parameter <no_type> DO_PHP = 3'd3;
+    parameter <no_type> DO____ = 3'bxxx;
+    parameter <no_type> DR_DI = 1'd1;
+    parameter <no_type> DR___ = 1'd0;
+    parameter <no_type> DST_A = 2'd3;
+    parameter <no_type> DST_X = 2'd1;
+    parameter <no_type> DST_Y = 2'd2;
+    parameter <no_type> DST__ = 2'bxx;
+    parameter <no_type> FLAG_ADD = 2'd1;
+    parameter <no_type> FLAG_BIT = 2'd3;
+    parameter <no_type> FLAG_CMP = 2'd2;
+    parameter <no_type> FLAG____ = 2'd0;
+    parameter <no_type> IDX0 = 6'd17;
+    parameter <no_type> IDX1 = 6'd18;
+    parameter <no_type> IDX2 = 6'd19;
+    parameter <no_type> IDX_XY = 2'd3;
+    parameter <no_type> IDX_X_ = 2'd1;
+    parameter <no_type> IDX__Y = 2'd2;
+    parameter <no_type> IDX___ = 2'd0;
+    parameter <no_type> IMM0 = 6'd1;
+    parameter <no_type> IMMR = 6'd43;
+    parameter <no_type> IND0 = 6'd25;
+    parameter <no_type> IND1 = 6'd26;
+    parameter <no_type> INDW = 6'd34;
+    parameter <no_type> IX = <SEL_X=2'd1, wid=2>;
+    parameter <no_type> IY = <SEL_Y=2'd2, wid=2>;
+    parameter <no_type> IZ = <SEL_Z=2'd0, wid=2>;
+    parameter <no_type> JMP0 = 6'd15;
+    parameter <no_type> JMP1 = 6'd16;
+    parameter <no_type> JMPW = 6'd33;
+    parameter <no_type> JSR0 = 6'd9;
+    parameter <no_type> JSR1 = 6'd10;
+    parameter <no_type> JSR2 = 6'd11;
+    parameter <no_type> JSR3 = 6'd40;
+    parameter <no_type> JSR4 = 6'd41;
+    parameter <no_type> JSRH = 6'd38;
+    parameter <no_type> JSRL = 6'd39;
+    parameter <no_type> JSRW = 6'd37;
+    parameter <no_type> LDA = 2'd1;
+    parameter <no_type> NOP = 2'd0;
+    parameter <no_type> PHA0 = 6'd2;
+    parameter <no_type> PLA0 = 6'd3;
+    parameter <no_type> RMW = 2'd3;
+    parameter <no_type> RMW0 = 6'd30;
+    parameter <no_type> RMW1 = 6'd31;
+    parameter <no_type> RTI0 = 6'd24;
+    parameter <no_type> RTS0 = 6'd12;
+    parameter <no_type> RTS1 = 6'd13;
+    parameter <no_type> RTS2 = 6'd14;
+    parameter <no_type> RTSW = 6'd42;
+    parameter <no_type> R_08 = 2'd0;
+    parameter <no_type> R_16 = 2'd1;
+    parameter <no_type> R_24 = 2'd2;
+    parameter <no_type> R_32 = 2'd3;
+    parameter <no_type> SEL_A = 2'd3;
+    parameter <no_type> SEL_X = 2'd1;
+    parameter <no_type> SEL_Y = 2'd2;
+    parameter <no_type> SEL_Z = 2'd0;
+    parameter <no_type> SRC_A = 2'd3;
+    parameter <no_type> SRC_X = 2'd1;
+    parameter <no_type> SRC_Y = 2'd2;
+    parameter <no_type> SRC_Z = 2'd0;
+    parameter <no_type> SRC__ = 2'bxx;
+    parameter <no_type> STA = 2'd2;
+    parameter <no_type> SYNC = 6'd0;
+    parameter <no_type> S_DEC = 2'd2;
+    parameter <no_type> S_INC = 2'd1;
+    parameter <no_type> S____ = 2'd0;
+    parameter <no_type> WE_1_ = 2'd1;
+    parameter <no_type> WE_ST = 2'd2;
+    parameter <no_type> WE___ = 2'd0;
+    parameter <no_type> ZPG0 = 6'd4;
+    parameter <no_type> ZPW0 = 6'd27;
+    enum sets {
+    }
+    enum names {
+    }
+    event _ivl_110; nprobe=1 scope=cpu // cpu.v:472
+    event _ivl_106; nprobe=1 scope=cpu // cpu.v:373
+    event _ivl_102; nprobe=1 scope=cpu // cpu.v:280
+    event _ivl_84; nprobe=1 scope=cpu // cpu.v:166
+    wire: AB unpacked dims=0 pin_count=1 output netvector_t:logic unsigned[23:0] (eref=0, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=24 pin_count=1
+        [0]: 0x60000069c0c0 cpu.AB
+    reg: ABWDTH unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=58, lref=3) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x60000069c4c0 cpu.ABWDTH
+    wire: B unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=1, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x60000069a700 cpu.B
+    reg: C unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=3, lref=5) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x60000069c080 cpu.C
+    reg: D unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=1, lref=4) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x60000069a6a0 cpu.D
+    reg: D3 unpacked dims=0 pin_count=1 netvector_t:logic unsigned[7:0] (eref=1, lref=1) scope=cpu #(0x0,0x0,0x0) vector_width=8 pin_count=1
+        [0]: 0x60000069c580 cpu.D3
+    reg: D4 unpacked dims=0 pin_count=1 netvector_t:logic unsigned[7:0] (eref=0, lref=1) scope=cpu #(0x0,0x0,0x0) vector_width=8 pin_count=1
+        [0]: 0x60000069c100 cpu.D4
+    wire: DI unpacked dims=0 pin_count=1 input netvector_t:logic unsigned[7:0] (eref=21, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=8 pin_count=1
+        [0]: 0x60000069c520 cpu.DI
+    reg: DIHOLD unpacked dims=0 pin_count=1 netvector_t:logic unsigned[8:0] (eref=2, lref=5) scope=cpu #(0x0,0x0,0x0) vector_width=9 pin_count=1
+        [0]: 0x60000069c6e0 cpu.DIHOLD
+    reg: DO unpacked dims=0 pin_count=1 output netvector_t:logic unsigned[7:0] (eref=0, lref=5) scope=cpu #(0x0,0x0,0x0) vector_width=8 pin_count=1 pins_are_virtual
+    reg: DR unpacked dims=0 pin_count=1 netvector_t:logic unsigned[7:0] (eref=1, lref=1) scope=cpu #(0x0,0x0,0x0) vector_width=8 pin_count=1
+        [0]: 0x60000069c560 cpu.DR
+    reg: I unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=1, lref=5) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x60000069a680 cpu.I
+    wire: IR unpacked dims=0 pin_count=1 netvector_t:logic unsigned[7:0] (eref=19, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=8 pin_count=1
+        [0]: 0x60000069c740 cpu.IR
+    wire: IRQ unpacked dims=0 pin_count=1 input netvector_t:logic unsigned (eref=0, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+    reg: N unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=3, lref=4) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x60000069a6c0 cpu.N
+    wire: NMI unpacked dims=0 pin_count=1 input netvector_t:logic unsigned (eref=0, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+    wire: P unpacked dims=0 pin_count=1 netvector_t:logic unsigned[7:0] (eref=1, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=8 pin_count=1
+        [0]: 0x60000069a620 cpu.P
+    wire: PC unpacked dims=0 pin_count=1 netvector_t:logic unsigned[23:0] (eref=3, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=24 pin_count=1
+        [0]: 0x60000069c480 cpu.PC
+    reg: PREFIX unpacked dims=0 pin_count=1 netvector_t:logic unsigned[2:0] (eref=2, lref=4) scope=cpu #(0x0,0x0,0x0) vector_width=3 pin_count=1 pins_are_virtual
+    wire: R unpacked dims=0 pin_count=1 netvector_t:logic unsigned[23:0] (eref=0, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=24 pin_count=1
+        [0]: 0x60000069c120 cpu.regfile.src
+    reg: RBYTES unpacked dims=0 pin_count=1 netvector_t:logic unsigned[1:0] (eref=4, lref=4) scope=cpu #(0x0,0x0,0x0) vector_width=2 pin_count=1 pins_are_virtual
+    wire: RDY unpacked dims=0 pin_count=1 input netvector_t:logic unsigned (eref=0, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+    wire: RST unpacked dims=0 pin_count=1 input netvector_t:logic unsigned (eref=1, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x60000069c600 cpu.RST
+    reg: RWDTH unpacked dims=0 pin_count=1 netvector_t:logic unsigned[1:0] (eref=3, lref=3) scope=cpu #(0x0,0x0,0x0) vector_width=2 pin_count=1
+        [0]: 0x60000069c040 cpu.RWDTH
+    wire: S unpacked dims=0 pin_count=1 netvector_t:logic unsigned[15:0] (eref=0, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=16 pin_count=1
+        [0]: 0x60000069c4a0 cpu.S
+    reg: V unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=3, lref=5) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x60000069a6e0 cpu.V
+    wire: WE unpacked dims=0 pin_count=1 output netvector_t:logic unsigned (eref=0, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x60000069c6c0 cpu.WE
+    wire: XY unpacked dims=0 pin_count=1 netvector_t:logic unsigned[23:0] (eref=0, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=24 pin_count=1
+        [0]: 0x60000069c5c0 cpu.regfile.idx
+    reg: Z unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=3, lref=3) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x60000069a660 cpu.Z
+    wire: _ivl_11 unpacked dims=0 pin_count=1 (local) netvector_t:logic unsigned[0:0] (eref=0, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x60000069b7e0 cpu._ivl_11
+    wire: _ivl_13 unpacked dims=0 pin_count=1 (local) netvector_t:logic unsigned[0:0] (eref=0, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x60000069b820 cpu._ivl_13
+    wire /*implicit*/: _ivl_16 unpacked dims=0 pin_count=1 (local) netvector_t:bool unsigned[1:0] (eref=0, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=2 pin_count=1
+        [0]: 0x60000069b7a0 cpu._ivl_16
+    wire /*implicit*/: _ivl_2 unpacked dims=0 pin_count=1 (local) netvector_t:bool unsigned[0:0] (eref=0, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x60000069a600 cpu._ivl_2
+    wire /*implicit*/: _ivl_20 unpacked dims=0 pin_count=1 (local) netvector_t:bool unsigned[1:0] (eref=0, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=2 pin_count=1
+        [0]: 0x60000069b880 cpu._ivl_20
+    wire /*implicit*/: _ivl_24 unpacked dims=0 pin_count=1 (local) netvector_t:bool unsigned[1:0] (eref=0, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=2 pin_count=1
+        [0]: 0x60000069b8c0 cpu._ivl_24
+    wire /*implicit*/: _ivl_50 unpacked dims=0 pin_count=1 (local) netvector_t:logic unsigned[0:0] (eref=0, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x60000069bdc0 cpu._ivl_50
+    wire /*implicit*/: _ivl_52 unpacked dims=0 pin_count=1 (local) netvector_t:logic unsigned[0:0] (eref=0, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x60000069bde0 cpu._ivl_52
+    wire /*implicit*/: _ivl_6 unpacked dims=0 pin_count=1 (local) netvector_t:bool unsigned[5:0] (eref=0, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=6 pin_count=1
+        [0]: 0x60000069b740 cpu._ivl_6
+    wire: _ivl_61 unpacked dims=0 pin_count=1 (local) netvector_t:logic unsigned[1:0] (eref=0, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=2 pin_count=1
+        [0]: 0x60000069be00 cpu._ivl_61
+    wire: _ivl_63 unpacked dims=0 pin_count=1 (local) netvector_t:logic unsigned[1:0] (eref=0, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=2 pin_count=1
+        [0]: 0x60000069be40 cpu._ivl_63
+    wire: _ivl_67 unpacked dims=0 pin_count=1 (local) netvector_t:logic unsigned[0:0] (eref=0, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x60000069c0e0 cpu._ivl_67
+    wire: _ivl_69 unpacked dims=0 pin_count=1 (local) netvector_t:logic unsigned[0:0] (eref=0, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x60000069c0a0 cpu._ivl_69
+    wire /*implicit*/: _ivl_70 unpacked dims=0 pin_count=1 (local) netvector_t:logic unsigned[0:0] (eref=0, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x60000069c260 cpu._ivl_70
+    wire: _ivl_75 unpacked dims=0 pin_count=1 (local) netvector_t:logic unsigned[0:0] (eref=0, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x60000069c700 cpu._ivl_75
+    wire: _ivl_77 unpacked dims=0 pin_count=1 (local) netvector_t:logic unsigned[7:0] (eref=0, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=8 pin_count=1
+        [0]: 0x60000069c1a0 cpu._ivl_77
+    wire: ab_op unpacked dims=0 pin_count=1 netvector_t:logic unsigned[9:0] (eref=0, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=10 pin_count=1
+        [0]: 0x60000069c020 cpu.ab_op
+    wire: adc_sbc unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=2, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x60000069b860 cpu.adc_sbc
+    wire: alu_C unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=1, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x60000069c220 cpu.alu_C
+    wire: alu_N unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=1, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x60000069c280 cpu.alu_N
+    wire: alu_V unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=1, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x60000069c000 cpu.alu_V
+    wire: alu_Z unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=1, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x60000069bfa0 cpu.alu_Z
+    wire: alu_op unpacked dims=0 pin_count=1 netvector_t:logic unsigned[8:0] (eref=1, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=9 pin_count=1
+        [0]: 0x60000069bf20 cpu.alu_op
+    wire: alu_out unpacked dims=0 pin_count=1 netvector_t:logic unsigned[23:0] (eref=2, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=24 pin_count=1
+        [0]: 0x60000069bf80 cpu.regfile.dst
+    wire: bit_isn unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=3, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x60000069b8e0 cpu.bit_isn
+    reg: bus_op unpacked dims=0 pin_count=1 netvector_t:logic unsigned[23:0] (eref=7, lref=49) scope=cpu #(0x0,0x0,0x0) vector_width=24 pin_count=1
+        [0]: 0x60000069b9a0 cpu.bus_op
+    reg: clc unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=1, lref=1) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1 pins_are_virtual
+    reg: cld unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=1, lref=1) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1 pins_are_virtual
+    reg: cli unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=1, lref=1) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1 pins_are_virtual
+    wire: clk unpacked dims=0 pin_count=1 input netvector_t:logic unsigned (eref=0, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x60000069c360 cpu.clk
+    reg: clv unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=1, lref=1) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1 pins_are_virtual
+    wire: cmp unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=3, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x60000069b8a0 cpu.cmp
+    reg: cond unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=2, lref=9) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x60000069dc60 cpu.cond
+    reg: cond_code unpacked dims=0 pin_count=1 netvector_t:logic unsigned[3:0] (eref=1, lref=1) scope=cpu #(0x0,0x0,0x0) vector_width=4 pin_count=1
+        [0]: 0x60000069caa0 cpu.cond_code
+    reg: control unpacked dims=0 pin_count=1 netvector_t:logic unsigned[17:0] (eref=4, lref=1) scope=cpu #(0x0,0x0,0x0) vector_width=18 pin_count=1
+        [0]: 0x60000069b800 cpu.control
+    wire: debug unpacked dims=0 pin_count=1 input netvector_t:logic unsigned (eref=0, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+    reg: decode unpacked dims=0 pin_count=1 netvector_t:logic unsigned[24:0] (eref=2, lref=185) scope=cpu #(0x0,0x0,0x0) vector_width=25 pin_count=1
+        [0]: 0x60000069c760 cpu.decode
+    wire: do_op unpacked dims=0 pin_count=1 netvector_t:logic unsigned[2:0] (eref=1, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=3 pin_count=1
+        [0]: 0x60000069bae0 cpu.do_op
+    wire: dr_di unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=1, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x60000069baa0 cpu.dr_di
+    wire: dw unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=0, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x60000069bba0 cpu.dw
+    wire: init_state unpacked dims=0 pin_count=1 netvector_t:logic unsigned[5:0] (eref=1, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=6 pin_count=1
+        [0]: 0x60000069c780 cpu.init_state
+    wire: ins_type unpacked dims=0 pin_count=1 netvector_t:logic unsigned[1:0] (eref=3, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=2 pin_count=1
+        [0]: 0x60000069b840 cpu.ins_type
+    wire: load unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=2, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x60000069b980 cpu.load
+    reg: php unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=1, lref=1) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x60000069c8c0 cpu.php
+    reg: plp unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=6, lref=1) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1 pins_are_virtual
+    wire: pull unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=0, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x60000069bb60 cpu.pull
+    wire: push unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=0, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x60000069bec0 cpu.push
+    reg: rti unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=7, lref=1) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x60000069dca0 cpu.rti
+    reg: sec unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=1, lref=1) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1 pins_are_virtual
+    reg: sed unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=1, lref=1) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1 pins_are_virtual
+    reg: sei unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=1, lref=1) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1 pins_are_virtual
+    wire: shift unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=1, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x60000069b9e0 cpu.shift
+    reg: state unpacked dims=0 pin_count=1 netvector_t:logic unsigned[5:0] (eref=10, lref=47) scope=cpu #(0x0,0x0,0x0) vector_width=6 pin_count=1
+        [0]: 0x60000069b760 cpu.state
+    wire: store unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=1, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x60000069b940 cpu.store
+    wire: sync unpacked dims=0 pin_count=1 output netvector_t:logic unsigned (eref=1, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x60000069b780 cpu.sync
+    reg: txs unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=0, lref=1) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x60000069bea0 cpu.txs
+    reg: variation unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=0, lref=1) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x60000069bb20 cpu.variation
+    wire: we_op unpacked dims=0 pin_count=1 netvector_t:logic unsigned[1:0] (eref=2, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=2 pin_count=1
+        [0]: 0x60000069ba60 cpu.we_op
+cpu.ab module <ab> instance 0 children, 0 classes
+    timescale = 10e0 / 10e0
+    enum sets {
+    }
+    enum names {
+    }
+    event _ivl_18; nprobe=1 scope=cpu.ab // ab.v:112
+    event _ivl_16; nprobe=1 scope=cpu.ab // ab.v:99
+    event _ivl_14; nprobe=1 scope=cpu.ab // ab.v:79
+    event _ivl_12; nprobe=1 scope=cpu.ab // ab.v:57
+    event _ivl_10; nprobe=1 scope=cpu.ab // ab.v:40
+    wire: AB unpacked dims=0 pin_count=1 output netvector_t:logic unsigned[23:0] (eref=2, lref=0) scope=cpu.ab #(0x0,0x0,0x0) vector_width=24 pin_count=1
+        [0]: 0x60000069c0c0 cpu.AB
+    reg: AB3 unpacked dims=0 pin_count=1 netvector_t:logic unsigned[7:0] (eref=1, lref=3) scope=cpu.ab #(0x0,0x0,0x0) vector_width=8 pin_count=1
+        [0]: 0x60000069c2a0 cpu.ab.AB3
+    reg: ABH unpacked dims=0 pin_count=1 netvector_t:logic unsigned[7:0] (eref=1, lref=4) scope=cpu.ab #(0x0,0x0,0x0) vector_width=8 pin_count=1
+        [0]: 0x60000069c180 cpu.ab.ABH
+    reg: ABL unpacked dims=0 pin_count=1 netvector_t:logic unsigned[7:0] (eref=1, lref=4) scope=cpu.ab #(0x0,0x0,0x0) vector_width=8 pin_count=1
+        [0]: 0x60000069c240 cpu.ab.ABL
+    wire: ABWDTH unpacked dims=0 pin_count=1 input netvector_t:logic unsigned (eref=1, lref=0) scope=cpu.ab #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x60000069c4c0 cpu.ABWDTH
+    wire: D3 unpacked dims=0 pin_count=1 input netvector_t:logic unsigned[7:0] (eref=1, lref=0) scope=cpu.ab #(0x0,0x0,0x0) vector_width=8 pin_count=1
+        [0]: 0x60000069c580 cpu.D3
+    wire: DI unpacked dims=0 pin_count=1 input netvector_t:logic unsigned[7:0] (eref=4, lref=0) scope=cpu.ab #(0x0,0x0,0x0) vector_width=8 pin_count=1
+        [0]: 0x60000069c520 cpu.DI
+    wire: DR unpacked dims=0 pin_count=1 input netvector_t:logic unsigned[7:0] (eref=2, lref=0) scope=cpu.ab #(0x0,0x0,0x0) vector_width=8 pin_count=1
+        [0]: 0x60000069c560 cpu.DR
+    reg: PC unpacked dims=0 pin_count=1 output netvector_t:logic unsigned[23:0] (eref=1, lref=4) scope=cpu.ab #(0x0,0x0,0x0) vector_width=24 pin_count=1
+        [0]: 0x60000069c480 cpu.PC
+    wire: RST unpacked dims=0 pin_count=1 input netvector_t:logic unsigned (eref=1, lref=0) scope=cpu.ab #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x60000069c600 cpu.RST
+    wire: S unpacked dims=0 pin_count=1 input netvector_t:logic unsigned[15:0] (eref=1, lref=0) scope=cpu.ab #(0x0,0x0,0x0) vector_width=16 pin_count=1
+        [0]: 0x60000069c4a0 cpu.S
+    wire: XY unpacked dims=0 pin_count=1 input netvector_t:logic unsigned[23:0] (eref=2, lref=0) scope=cpu.ab #(0x0,0x0,0x0) vector_width=24 pin_count=1
+        [0]: 0x60000069c5c0 cpu.regfile.idx
+    wire: _ivl_5 unpacked dims=0 pin_count=1 (local) netvector_t:logic unsigned[0:0] (eref=0, lref=0) scope=cpu.ab #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x60000069c320 cpu.ab._ivl_5
+    reg: ab_hold unpacked dims=0 pin_count=1 netvector_t:logic unsigned[23:0] (eref=1, lref=1) scope=cpu.ab #(0x0,0x0,0x0) vector_width=24 pin_count=1
+        [0]: 0x60000069c460 cpu.ab.ab_hold
+    wire: ab_op unpacked dims=0 pin_count=1 input netvector_t:logic unsigned[9:0] (eref=8, lref=0) scope=cpu.ab #(0x0,0x0,0x0) vector_width=10 pin_count=1
+        [0]: 0x60000069c020 cpu.ab_op
+    wire: abh_ci unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=4, lref=0) scope=cpu.ab #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x60000069c2e0 cpu.ab.abh_ci
+    reg: abh_co unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=2, lref=4) scope=cpu.ab #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x60000069c720 cpu.ab.abh_co
+    wire: abl_ci unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=4, lref=0) scope=cpu.ab #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x60000069c2c0 cpu.ab.abl_ci
+    reg: abl_co unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=1, lref=4) scope=cpu.ab #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x60000069c340 cpu.ab.abl_co
+    reg: base unpacked dims=0 pin_count=1 netvector_t:logic unsigned[23:0] (eref=9, lref=5) scope=cpu.ab #(0x0,0x0,0x0) vector_width=24 pin_count=1
+        [0]: 0x60000069c5a0 cpu.ab.base
+    wire: clk unpacked dims=0 pin_count=1 input netvector_t:logic unsigned (eref=0, lref=0) scope=cpu.ab #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x60000069c360 cpu.clk
+cpu.alu module <alu> instance 0 children, 0 classes
+    timescale = 10e0 / 10e0
+    parameter <no_type> ABS0 = 6'd6;
+    parameter <no_type> ABS1 = 6'd7;
+    parameter <no_type> ABSR = 6'd44;
+    parameter <no_type> ABSW = 6'd35;
+    parameter <no_type> ABW0 = 6'd28;
+    parameter <no_type> ABW1 = 6'd29;
+    parameter <no_type> ABWW = 6'd36;
+    parameter <no_type> AB_16 = 2'd0;
+    parameter <no_type> AB_24 = 2'd1;
+    parameter <no_type> AB_32 = 2'd2;
+    parameter <no_type> AB_48 = 2'd3;
+    parameter <no_type> AB_ABSX = 10'd658;
+    parameter <no_type> AB_BACK = 10'd812;
+    parameter <no_type> AB_FWRD = 10'd556;
+    parameter <no_type> AB_HOLD = 10'd536;
+    parameter <no_type> AB_INCR = 10'd665;
+    parameter <no_type> AB_IRQV = 10'd352;
+    parameter <no_type> AB_JMP0 = 10'd562;
+    parameter <no_type> AB_JMP1 = 10'd561;
+    parameter <no_type> AB_NEXT = 10'd537;
+    parameter <no_type> AB_NMIV = 10'd320;
+    parameter <no_type> AB_OPER = 10'd40;
+    parameter <no_type> AB_PULL = 10'd257;
+    parameter <no_type> AB_PUSH = 10'd256;
+    parameter <no_type> AB_ZPGX = 10'd134;
+    parameter <no_type> ALU_ADC = 9'd6;
+    parameter <no_type> ALU_AND = 9'd80;
+    parameter <no_type> ALU_ASLA = 9'd256;
+    parameter <no_type> ALU_ASLM = 9'd272;
+    parameter <no_type> ALU_CMP = 9'd13;
+    parameter <no_type> ALU_DECA = 9'd8;
+    parameter <no_type> ALU_DECM = 9'd24;
+    parameter <no_type> ALU_EOR = 9'd96;
+    parameter <no_type> ALU_INCA = 9'd1;
+    parameter <no_type> ALU_INCM = 9'd17;
+    parameter <no_type> ALU_LDA = 9'd16;
+    parameter <no_type> ALU_LSRA = 9'd384;
+    parameter <no_type> ALU_LSRM = 9'd400;
+    parameter <no_type> ALU_ORA = 9'd64;
+    parameter <no_type> ALU_PLA = 9'b01xxxxxxx;
+    parameter <no_type> ALU_REG = 9'd0;
+    parameter <no_type> ALU_ROLA = 9'd259;
+    parameter <no_type> ALU_ROLM = 9'd275;
+    parameter <no_type> ALU_RORA = 9'd387;
+    parameter <no_type> ALU_RORM = 9'd403;
+    parameter <no_type> ALU_SBC = 9'd14;
+    parameter <no_type> ALU_TSX = 9'd112;
+    parameter <no_type> ALU_____ = 9'bxxxxxxxxx;
+    parameter <no_type> BRA0 = 6'd8;
+    parameter <no_type> BRK0 = 6'd20;
+    parameter <no_type> BRK1 = 6'd21;
+    parameter <no_type> BRK2 = 6'd22;
+    parameter <no_type> BRK3 = 6'd23;
+    parameter <no_type> BRK4 = 6'd32;
+    parameter <no_type> DATA = 6'd5;
+    parameter <no_type> DO_ALU = 3'd0;
+    parameter <no_type> DO_PC3 = 3'd4;
+    parameter <no_type> DO_PCH = 3'd2;
+    parameter <no_type> DO_PCL = 3'd1;
+    parameter <no_type> DO_PHP = 3'd3;
+    parameter <no_type> DO____ = 3'bxxx;
+    parameter <no_type> DR_DI = 1'd1;
+    parameter <no_type> DR___ = 1'd0;
+    parameter <no_type> DST_A = 2'd3;
+    parameter <no_type> DST_X = 2'd1;
+    parameter <no_type> DST_Y = 2'd2;
+    parameter <no_type> DST__ = 2'bxx;
+    parameter <no_type> FLAG_ADD = 2'd1;
+    parameter <no_type> FLAG_BIT = 2'd3;
+    parameter <no_type> FLAG_CMP = 2'd2;
+    parameter <no_type> FLAG____ = 2'd0;
+    parameter <no_type> IDX0 = 6'd17;
+    parameter <no_type> IDX1 = 6'd18;
+    parameter <no_type> IDX2 = 6'd19;
+    parameter <no_type> IDX_XY = 2'd3;
+    parameter <no_type> IDX_X_ = 2'd1;
+    parameter <no_type> IDX__Y = 2'd2;
+    parameter <no_type> IDX___ = 2'd0;
+    parameter <no_type> IMM0 = 6'd1;
+    parameter <no_type> IMMR = 6'd43;
+    parameter <no_type> IND0 = 6'd25;
+    parameter <no_type> IND1 = 6'd26;
+    parameter <no_type> INDW = 6'd34;
+    parameter <no_type> IX = <SEL_X=2'd1, wid=2>;
+    parameter <no_type> IY = <SEL_Y=2'd2, wid=2>;
+    parameter <no_type> IZ = <SEL_Z=2'd0, wid=2>;
+    parameter <no_type> JMP0 = 6'd15;
+    parameter <no_type> JMP1 = 6'd16;
+    parameter <no_type> JMPW = 6'd33;
+    parameter <no_type> JSR0 = 6'd9;
+    parameter <no_type> JSR1 = 6'd10;
+    parameter <no_type> JSR2 = 6'd11;
+    parameter <no_type> JSR3 = 6'd40;
+    parameter <no_type> JSR4 = 6'd41;
+    parameter <no_type> JSRH = 6'd38;
+    parameter <no_type> JSRL = 6'd39;
+    parameter <no_type> JSRW = 6'd37;
+    parameter <no_type> LDA = 2'd1;
+    parameter <no_type> NOP = 2'd0;
+    parameter <no_type> PHA0 = 6'd2;
+    parameter <no_type> PLA0 = 6'd3;
+    parameter <no_type> RMW = 2'd3;
+    parameter <no_type> RMW0 = 6'd30;
+    parameter <no_type> RMW1 = 6'd31;
+    parameter <no_type> RTI0 = 6'd24;
+    parameter <no_type> RTS0 = 6'd12;
+    parameter <no_type> RTS1 = 6'd13;
+    parameter <no_type> RTS2 = 6'd14;
+    parameter <no_type> RTSW = 6'd42;
+    parameter <no_type> R_08 = 2'd0;
+    parameter <no_type> R_16 = 2'd1;
+    parameter <no_type> R_24 = 2'd2;
+    parameter <no_type> R_32 = 2'd3;
+    parameter <no_type> SEL_A = 2'd3;
+    parameter <no_type> SEL_X = 2'd1;
+    parameter <no_type> SEL_Y = 2'd2;
+    parameter <no_type> SEL_Z = 2'd0;
+    parameter <no_type> SRC_A = 2'd3;
+    parameter <no_type> SRC_X = 2'd1;
+    parameter <no_type> SRC_Y = 2'd2;
+    parameter <no_type> SRC_Z = 2'd0;
+    parameter <no_type> SRC__ = 2'bxx;
+    parameter <no_type> STA = 2'd2;
+    parameter <no_type> SYNC = 6'd0;
+    parameter <no_type> S_DEC = 2'd2;
+    parameter <no_type> S_INC = 2'd1;
+    parameter <no_type> S____ = 2'd0;
+    parameter <no_type> WE_1_ = 2'd1;
+    parameter <no_type> WE_ST = 2'd2;
+    parameter <no_type> WE___ = 2'd0;
+    parameter <no_type> ZPG0 = 6'd4;
+    parameter <no_type> ZPW0 = 6'd27;
+    enum sets {
+    }
+    enum names {
+    }
+    event _ivl_8; nprobe=1 scope=cpu.alu // alu.v:36
+    wire: C unpacked dims=0 pin_count=1 input netvector_t:logic unsigned (eref=2, lref=0) scope=cpu.alu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x60000069c080 cpu.C
+    wire: D3 unpacked dims=0 pin_count=1 input netvector_t:logic unsigned[7:0] (eref=2, lref=0) scope=cpu.alu #(0x0,0x0,0x0) vector_width=8 pin_count=1
+        [0]: 0x60000069c580 cpu.D3
+    wire: D4 unpacked dims=0 pin_count=1 input netvector_t:logic unsigned[7:0] (eref=1, lref=0) scope=cpu.alu #(0x0,0x0,0x0) vector_width=8 pin_count=1
+        [0]: 0x60000069c100 cpu.D4
+    wire: DI unpacked dims=0 pin_count=1 input netvector_t:logic unsigned[7:0] (eref=1, lref=0) scope=cpu.alu #(0x0,0x0,0x0) vector_width=8 pin_count=1
+        [0]: 0x60000069c520 cpu.DI
+    wire: DR unpacked dims=0 pin_count=1 input netvector_t:logic unsigned[7:0] (eref=3, lref=0) scope=cpu.alu #(0x0,0x0,0x0) vector_width=8 pin_count=1
+        [0]: 0x60000069c560 cpu.DR
+    reg: MEM unpacked dims=0 pin_count=1 netvector_t:logic unsigned[23:0] (eref=6, lref=3) scope=cpu.alu #(0x0,0x0,0x0) vector_width=24 pin_count=1
+        [0]: 0x60000069c140 cpu.alu.MEM
+    wire: R unpacked dims=0 pin_count=1 input netvector_t:logic unsigned[23:0] (eref=4, lref=0) scope=cpu.alu #(0x0,0x0,0x0) vector_width=24 pin_count=1
+        [0]: 0x60000069c120 cpu.regfile.src
+    wire: RWDTH unpacked dims=0 pin_count=1 input netvector_t:logic unsigned[1:0] (eref=5, lref=0) scope=cpu.alu #(0x0,0x0,0x0) vector_width=2 pin_count=1
+        [0]: 0x60000069c040 cpu.RWDTH
+    wire: S unpacked dims=0 pin_count=1 input netvector_t:logic unsigned[15:0] (eref=1, lref=0) scope=cpu.alu #(0x0,0x0,0x0) vector_width=16 pin_count=1
+        [0]: 0x60000069c4a0 cpu.S
+    wire /*implicit*/: _ivl_4 unpacked dims=0 pin_count=1 (local) netvector_t:bool unsigned[23:0] (eref=0, lref=0) scope=cpu.alu #(0x0,0x0,0x0) vector_width=24 pin_count=1
+        [0]: 0x60000069bf60 cpu.alu._ivl_4
+    reg: alu_C unpacked dims=0 pin_count=1 output netvector_t:logic unsigned (eref=3, lref=3) scope=cpu.alu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x60000069c220 cpu.alu_C
+    reg: alu_N unpacked dims=0 pin_count=1 output netvector_t:logic unsigned (eref=3, lref=1) scope=cpu.alu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x60000069c280 cpu.alu_N
+    reg: alu_V unpacked dims=0 pin_count=1 output netvector_t:logic unsigned (eref=0, lref=1) scope=cpu.alu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x60000069c000 cpu.alu_V
+    wire: alu_Z unpacked dims=0 pin_count=1 output netvector_t:logic unsigned (eref=0, lref=0) scope=cpu.alu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x60000069bfa0 cpu.alu_Z
+    reg: alu_ai unpacked dims=0 pin_count=1 netvector_t:logic unsigned[23:0] (eref=4, lref=6) scope=cpu.alu #(0x0,0x0,0x0) vector_width=24 pin_count=1
+        [0]: 0x60000069c160 cpu.alu.alu_ai
+    reg: alu_bi unpacked dims=0 pin_count=1 netvector_t:logic unsigned[23:0] (eref=4, lref=4) scope=cpu.alu #(0x0,0x0,0x0) vector_width=24 pin_count=1
+        [0]: 0x60000069c1c0 cpu.alu.alu_bi
+    reg: alu_ci unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=1, lref=4) scope=cpu.alu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x60000069c1e0 cpu.alu.alu_ci
+    wire: alu_op unpacked dims=0 pin_count=1 input netvector_t:logic unsigned[8:0] (eref=6, lref=0) scope=cpu.alu #(0x0,0x0,0x0) vector_width=9 pin_count=1
+        [0]: 0x60000069bf20 cpu.alu_op
+    reg: alu_out unpacked dims=0 pin_count=1 output netvector_t:logic unsigned[23:0] (eref=6, lref=4) scope=cpu.alu #(0x0,0x0,0x0) vector_width=24 pin_count=1
+        [0]: 0x60000069bf80 cpu.regfile.dst
+    reg: alu_si unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=2, lref=1) scope=cpu.alu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x60000069c200 cpu.alu.alu_si
+    wire: right unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=2, lref=0) scope=cpu.alu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x60000069bee0 cpu.alu.right
+    wire: shift unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=1, lref=0) scope=cpu.alu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x60000069bf40 cpu.alu.shift
+cpu.regfile module <regfile> instance 0 children, 0 classes
+    timescale = 10e0 / 10e0
+    parameter <no_type> ABS0 = 6'd6;
+    parameter <no_type> ABS1 = 6'd7;
+    parameter <no_type> ABSR = 6'd44;
+    parameter <no_type> ABSW = 6'd35;
+    parameter <no_type> ABW0 = 6'd28;
+    parameter <no_type> ABW1 = 6'd29;
+    parameter <no_type> ABWW = 6'd36;
+    parameter <no_type> AB_16 = 2'd0;
+    parameter <no_type> AB_24 = 2'd1;
+    parameter <no_type> AB_32 = 2'd2;
+    parameter <no_type> AB_48 = 2'd3;
+    parameter <no_type> AB_ABSX = 10'd658;
+    parameter <no_type> AB_BACK = 10'd812;
+    parameter <no_type> AB_FWRD = 10'd556;
+    parameter <no_type> AB_HOLD = 10'd536;
+    parameter <no_type> AB_INCR = 10'd665;
+    parameter <no_type> AB_IRQV = 10'd352;
+    parameter <no_type> AB_JMP0 = 10'd562;
+    parameter <no_type> AB_JMP1 = 10'd561;
+    parameter <no_type> AB_NEXT = 10'd537;
+    parameter <no_type> AB_NMIV = 10'd320;
+    parameter <no_type> AB_OPER = 10'd40;
+    parameter <no_type> AB_PULL = 10'd257;
+    parameter <no_type> AB_PUSH = 10'd256;
+    parameter <no_type> AB_ZPGX = 10'd134;
+    parameter <no_type> ALU_ADC = 9'd6;
+    parameter <no_type> ALU_AND = 9'd80;
+    parameter <no_type> ALU_ASLA = 9'd256;
+    parameter <no_type> ALU_ASLM = 9'd272;
+    parameter <no_type> ALU_CMP = 9'd13;
+    parameter <no_type> ALU_DECA = 9'd8;
+    parameter <no_type> ALU_DECM = 9'd24;
+    parameter <no_type> ALU_EOR = 9'd96;
+    parameter <no_type> ALU_INCA = 9'd1;
+    parameter <no_type> ALU_INCM = 9'd17;
+    parameter <no_type> ALU_LDA = 9'd16;
+    parameter <no_type> ALU_LSRA = 9'd384;
+    parameter <no_type> ALU_LSRM = 9'd400;
+    parameter <no_type> ALU_ORA = 9'd64;
+    parameter <no_type> ALU_PLA = 9'b01xxxxxxx;
+    parameter <no_type> ALU_REG = 9'd0;
+    parameter <no_type> ALU_ROLA = 9'd259;
+    parameter <no_type> ALU_ROLM = 9'd275;
+    parameter <no_type> ALU_RORA = 9'd387;
+    parameter <no_type> ALU_RORM = 9'd403;
+    parameter <no_type> ALU_SBC = 9'd14;
+    parameter <no_type> ALU_TSX = 9'd112;
+    parameter <no_type> ALU_____ = 9'bxxxxxxxxx;
+    parameter <no_type> BRA0 = 6'd8;
+    parameter <no_type> BRK0 = 6'd20;
+    parameter <no_type> BRK1 = 6'd21;
+    parameter <no_type> BRK2 = 6'd22;
+    parameter <no_type> BRK3 = 6'd23;
+    parameter <no_type> BRK4 = 6'd32;
+    parameter <no_type> DATA = 6'd5;
+    parameter <no_type> DO_ALU = 3'd0;
+    parameter <no_type> DO_PC3 = 3'd4;
+    parameter <no_type> DO_PCH = 3'd2;
+    parameter <no_type> DO_PCL = 3'd1;
+    parameter <no_type> DO_PHP = 3'd3;
+    parameter <no_type> DO____ = 3'bxxx;
+    parameter <no_type> DR_DI = 1'd1;
+    parameter <no_type> DR___ = 1'd0;
+    parameter <no_type> DST_A = 2'd3;
+    parameter <no_type> DST_X = 2'd1;
+    parameter <no_type> DST_Y = 2'd2;
+    parameter <no_type> DST__ = 2'bxx;
+    parameter <no_type> FLAG_ADD = 2'd1;
+    parameter <no_type> FLAG_BIT = 2'd3;
+    parameter <no_type> FLAG_CMP = 2'd2;
+    parameter <no_type> FLAG____ = 2'd0;
+    parameter <no_type> IDX0 = 6'd17;
+    parameter <no_type> IDX1 = 6'd18;
+    parameter <no_type> IDX2 = 6'd19;
+    parameter <no_type> IDX_XY = 2'd3;
+    parameter <no_type> IDX_X_ = 2'd1;
+    parameter <no_type> IDX__Y = 2'd2;
+    parameter <no_type> IDX___ = 2'd0;
+    parameter <no_type> IMM0 = 6'd1;
+    parameter <no_type> IMMR = 6'd43;
+    parameter <no_type> IND0 = 6'd25;
+    parameter <no_type> IND1 = 6'd26;
+    parameter <no_type> INDW = 6'd34;
+    parameter <no_type> IX = <SEL_X=2'd1, wid=2>;
+    parameter <no_type> IY = <SEL_Y=2'd2, wid=2>;
+    parameter <no_type> IZ = <SEL_Z=2'd0, wid=2>;
+    parameter <no_type> JMP0 = 6'd15;
+    parameter <no_type> JMP1 = 6'd16;
+    parameter <no_type> JMPW = 6'd33;
+    parameter <no_type> JSR0 = 6'd9;
+    parameter <no_type> JSR1 = 6'd10;
+    parameter <no_type> JSR2 = 6'd11;
+    parameter <no_type> JSR3 = 6'd40;
+    parameter <no_type> JSR4 = 6'd41;
+    parameter <no_type> JSRH = 6'd38;
+    parameter <no_type> JSRL = 6'd39;
+    parameter <no_type> JSRW = 6'd37;
+    parameter <no_type> LDA = 2'd1;
+    parameter <no_type> NOP = 2'd0;
+    parameter <no_type> PHA0 = 6'd2;
+    parameter <no_type> PLA0 = 6'd3;
+    parameter <no_type> RMW = 2'd3;
+    parameter <no_type> RMW0 = 6'd30;
+    parameter <no_type> RMW1 = 6'd31;
+    parameter <no_type> RTI0 = 6'd24;
+    parameter <no_type> RTS0 = 6'd12;
+    parameter <no_type> RTS1 = 6'd13;
+    parameter <no_type> RTS2 = 6'd14;
+    parameter <no_type> RTSW = 6'd42;
+    parameter <no_type> R_08 = 2'd0;
+    parameter <no_type> R_16 = 2'd1;
+    parameter <no_type> R_24 = 2'd2;
+    parameter <no_type> R_32 = 2'd3;
+    parameter <no_type> SEL_A = 2'd3;
+    parameter <no_type> SEL_X = 2'd1;
+    parameter <no_type> SEL_Y = 2'd2;
+    parameter <no_type> SEL_Z = 2'd0;
+    parameter <no_type> SRC_A = 2'd3;
+    parameter <no_type> SRC_X = 2'd1;
+    parameter <no_type> SRC_Y = 2'd2;
+    parameter <no_type> SRC_Z = 2'd0;
+    parameter <no_type> SRC__ = 2'bxx;
+    parameter <no_type> STA = 2'd2;
+    parameter <no_type> SYNC = 6'd0;
+    parameter <no_type> S_DEC = 2'd2;
+    parameter <no_type> S_INC = 2'd1;
+    parameter <no_type> S____ = 2'd0;
+    parameter <no_type> WE_1_ = 2'd1;
+    parameter <no_type> WE_ST = 2'd2;
+    parameter <no_type> WE___ = 2'd0;
+    parameter <no_type> ZPG0 = 6'd4;
+    parameter <no_type> ZPW0 = 6'd27;
+    enum sets {
+    }
+    enum names {
+    }
+    reg: S unpacked dims=0 pin_count=1 output netvector_t:logic unsigned[15:0] (eref=2, lref=4) scope=cpu.regfile #(0x0,0x0,0x0) vector_width=16 pin_count=1
+        [0]: 0x60000069c4a0 cpu.S
+    wire /*implicit*/: _ivl_0 unpacked dims=0 pin_count=1 (local) netvector_t:logic unsigned[23:0] (eref=0, lref=0) scope=cpu.regfile #(0x0,0x0,0x0) vector_width=24 pin_count=1
+        [0]: 0x60000069bc00 cpu.regfile._ivl_0
+    wire /*implicit*/: _ivl_10 unpacked dims=0 pin_count=1 (local) netvector_t:logic unsigned[3:0] (eref=0, lref=0) scope=cpu.regfile #(0x0,0x0,0x0) vector_width=4 pin_count=1
+        [0]: 0x60000069bc60 cpu.regfile._ivl_10
+    wire /*implicit*/: _ivl_13 unpacked dims=0 pin_count=1 (local) netvector_t:logic unsigned[1:0] (eref=0, lref=0) scope=cpu.regfile #(0x0,0x0,0x0) vector_width=2 pin_count=1
+        [0]: 0x60000069bc40 cpu.regfile._ivl_13
+    wire /*implicit*/: _ivl_2 unpacked dims=0 pin_count=1 (local) netvector_t:logic unsigned[3:0] (eref=0, lref=0) scope=cpu.regfile #(0x0,0x0,0x0) vector_width=4 pin_count=1
+        [0]: 0x60000069bbc0 cpu.regfile._ivl_2
+    wire /*implicit*/: _ivl_5 unpacked dims=0 pin_count=1 (local) netvector_t:logic unsigned[1:0] (eref=0, lref=0) scope=cpu.regfile #(0x0,0x0,0x0) vector_width=2 pin_count=1
+        [0]: 0x60000069ba20 cpu.regfile._ivl_5
+    wire /*implicit*/: _ivl_8 unpacked dims=0 pin_count=1 (local) netvector_t:logic unsigned[23:0] (eref=0, lref=0) scope=cpu.regfile #(0x0,0x0,0x0) vector_width=24 pin_count=1
+        [0]: 0x60000069bca0 cpu.regfile._ivl_8
+    wire: clk unpacked dims=0 pin_count=1 input netvector_t:logic unsigned (eref=0, lref=0) scope=cpu.regfile #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x60000069c360 cpu.clk
+    wire: dst unpacked dims=0 pin_count=1 input netvector_t:logic unsigned[23:0] (eref=2, lref=0) scope=cpu.regfile #(0x0,0x0,0x0) vector_width=24 pin_count=1
+        [0]: 0x60000069bf80 cpu.regfile.dst
+    wire: idx unpacked dims=0 pin_count=1 output netvector_t:logic unsigned[23:0] (eref=0, lref=0) scope=cpu.regfile #(0x0,0x0,0x0) vector_width=24 pin_count=1
+        [0]: 0x60000069c5c0 cpu.regfile.idx
+    wire: pull unpacked dims=0 pin_count=1 input netvector_t:logic unsigned (eref=1, lref=0) scope=cpu.regfile #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x60000069bb60 cpu.pull
+    wire: push unpacked dims=0 pin_count=1 input netvector_t:logic unsigned (eref=1, lref=0) scope=cpu.regfile #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x60000069bec0 cpu.push
+    wire: reg_dst unpacked dims=0 pin_count=1 input netvector_t:logic unsigned[1:0] (eref=4, lref=0) scope=cpu.regfile #(0x0,0x0,0x0) vector_width=2 pin_count=1
+        [0]: 0x60000069be60 cpu.regfile.reg_dst
+    wire: reg_idx unpacked dims=0 pin_count=1 input netvector_t:logic unsigned[1:0] (eref=1, lref=0) scope=cpu.regfile #(0x0,0x0,0x0) vector_width=2 pin_count=1
+        [0]: 0x60000069bc80 cpu.regfile.reg_idx
+    wire: reg_src unpacked dims=0 pin_count=1 input netvector_t:logic unsigned[1:0] (eref=1, lref=0) scope=cpu.regfile #(0x0,0x0,0x0) vector_width=2 pin_count=1
+        [0]: 0x60000069bbe0 cpu.regfile.reg_src
+    wire: reg_we unpacked dims=0 pin_count=1 input netvector_t:logic unsigned (eref=1, lref=0) scope=cpu.regfile #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x60000069bda0 cpu.regfile.reg_we
+    reg: regs[3:0] unpacked dims=1 pin_count=4 netvector_t:logic unsigned[23:0] (eref=4, lref=6) scope=cpu.regfile #(0x0,0x0,0x0) vector_width=24 pin_count=4 pins_are_virtual
+    wire: src unpacked dims=0 pin_count=1 output netvector_t:logic unsigned[23:0] (eref=1, lref=0) scope=cpu.regfile #(0x0,0x0,0x0) vector_width=24 pin_count=1
+        [0]: 0x60000069c120 cpu.regfile.src
+    wire: txs unpacked dims=0 pin_count=1 input netvector_t:logic unsigned (eref=1, lref=0) scope=cpu.regfile #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x60000069bea0 cpu.txs
+    wire: variation unpacked dims=0 pin_count=1 input netvector_t:logic unsigned (eref=1, lref=0) scope=cpu.regfile #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x60000069bb20 cpu.variation
+ELABORATED NODES:
+constant 1'sd-1: _ivl_1 #(.,.,.)
+    0 pin0 O (strong0 strong1): 0x60000069a700 cpu.B
+constant 1'd1: _ivl_3 #(.,.,.)
+    0 pin0 O (strong0 strong1): 0x60000069a600 cpu._ivl_2
+NetConcat: _ivl_5 #(0,0,0) scope=cpu width=8
+    0 pin0 O (strong0 strong1): 0x60000069a620 cpu.P
+    1 pin1 I (strong0 strong1): 0x60000069c080 cpu.C
+    2 pin2 I (strong0 strong1): 0x60000069a660 cpu.Z
+    3 pin3 I (strong0 strong1): 0x60000069a680 cpu.I
+    4 pin4 I (strong0 strong1): 0x60000069a6a0 cpu.D
+    5 pin5 I (strong0 strong1): 0x60000069a700 cpu.B
+    6 pin6 I (strong0 strong1): 0x60000069a600 cpu._ivl_2
+    7 pin7 I (strong0 strong1): 0x60000069a6e0 cpu.V
+    8 pin8 I (strong0 strong1): 0x60000069a6c0 cpu.N
+constant 6'd0: _ivl_7 #(.,.,.)
+    0 pin0 O (strong0 strong1): 0x60000069b740 cpu._ivl_6
+LPM_COMPARE (NetCompare unsigned): _ivl_9
+    0 pin0 O (strong0 strong1): 
+    1 pin1 O (strong0 strong1): 
+    2 pin2 O (strong0 strong1): 0x60000069b780 cpu.sync
+    3 pin3 O (strong0 strong1): 
+    4 pin4 O (strong0 strong1): 
+    5 pin5 O (strong0 strong1): 
+    6 pin6 I (strong0 strong1): 0x60000069b760 cpu.state
+    7 pin7 I (strong0 strong1): 0x60000069b740 cpu._ivl_6
+constant 1'bx: _ivl_10 #(.,.,.)
+    0 pin0 O (strong0 strong1): 0x60000069b7e0 cpu._ivl_11
+NetPartSelect(VP): _ivl_12 #(.,.,.) off=17 wid=1
+    0 pin0 O (strong0 strong1): 0x60000069b820 cpu._ivl_13
+    1 pin1 I (strong0 strong1): 0x60000069b800 cpu.control
+NetConcat: _ivl_14 #(0,0,0) scope=cpu width=2
+    0 pin0 O (strong0 strong1): 0x60000069b840 cpu.ins_type
+    1 pin1 I (strong0 strong1): 0x60000069b820 cpu._ivl_13
+    2 pin2 I (strong0 strong1): 0x60000069b7e0 cpu._ivl_11
+constant 2'd1: _ivl_17 #(.,.,.)
+    0 pin0 O (strong0 strong1): 0x60000069b7a0 cpu._ivl_16
+LPM_COMPARE (NetCompare unsigned): _ivl_19
+    0 pin0 O (strong0 strong1): 
+    1 pin1 O (strong0 strong1): 
+    2 pin2 O (strong0 strong1): 0x60000069b860 cpu.adc_sbc
+    3 pin3 O (strong0 strong1): 
+    4 pin4 O (strong0 strong1): 
+    5 pin5 O (strong0 strong1): 
+    6 pin6 I (strong0 strong1): 0x60000069b840 cpu.ins_type
+    7 pin7 I (strong0 strong1): 0x60000069b7a0 cpu._ivl_16
+constant 2'd2: _ivl_21 #(.,.,.)
+    0 pin0 O (strong0 strong1): 0x60000069b880 cpu._ivl_20
+LPM_COMPARE (NetCompare unsigned): _ivl_23
+    0 pin0 O (strong0 strong1): 
+    1 pin1 O (strong0 strong1): 
+    2 pin2 O (strong0 strong1): 0x60000069b8a0 cpu.cmp
+    3 pin3 O (strong0 strong1): 
+    4 pin4 O (strong0 strong1): 
+    5 pin5 O (strong0 strong1): 
+    6 pin6 I (strong0 strong1): 0x60000069b840 cpu.ins_type
+    7 pin7 I (strong0 strong1): 0x60000069b880 cpu._ivl_20
+constant 2'd3: _ivl_25 #(.,.,.)
+    0 pin0 O (strong0 strong1): 0x60000069b8c0 cpu._ivl_24
+LPM_COMPARE (NetCompare unsigned): _ivl_27
+    0 pin0 O (strong0 strong1): 
+    1 pin1 O (strong0 strong1): 
+    2 pin2 O (strong0 strong1): 0x60000069b8e0 cpu.bit_isn
+    3 pin3 O (strong0 strong1): 
+    4 pin4 O (strong0 strong1): 
+    5 pin5 O (strong0 strong1): 
+    6 pin6 I (strong0 strong1): 0x60000069b840 cpu.ins_type
+    7 pin7 I (strong0 strong1): 0x60000069b8c0 cpu._ivl_24
+NetPartSelect(VP): _ivl_28 #(.,.,.) off=16 wid=1
+    0 pin0 O (strong0 strong1): 0x60000069b940 cpu.store
+    1 pin1 I (strong0 strong1): 0x60000069b800 cpu.control
+NetPartSelect(VP): _ivl_30 #(.,.,.) off=15 wid=1
+    0 pin0 O (strong0 strong1): 0x60000069b980 cpu.load
+    1 pin1 I (strong0 strong1): 0x60000069b800 cpu.control
+NetPartSelect(VP): _ivl_32 #(.,.,.) off=2 wid=9
+    0 pin0 O (strong0 strong1): 0x60000069bf20 cpu.alu_op
+    1 pin1 I (strong0 strong1): 0x60000069b800 cpu.control
+NetPartSelect(VP): _ivl_34 #(.,.,.) off=8 wid=1
+    0 pin0 O (strong0 strong1): 0x60000069b9e0 cpu.shift
+    1 pin1 I (strong0 strong1): 0x60000069bf20 cpu.alu_op
+NetPartSelect(VP): _ivl_36 #(.,.,.) off=0 wid=10
+    0 pin0 O (strong0 strong1): 0x60000069c020 cpu.ab_op
+    1 pin1 I (strong0 strong1): 0x60000069b9a0 cpu.bus_op
+NetPartSelect(VP): _ivl_38 #(.,.,.) off=10 wid=2
+    0 pin0 O (strong0 strong1): 0x60000069ba60 cpu.we_op
+    1 pin1 I (strong0 strong1): 0x60000069b9a0 cpu.bus_op
+NetPartSelect(VP): _ivl_40 #(.,.,.) off=12 wid=1
+    0 pin0 O (strong0 strong1): 0x60000069baa0 cpu.dr_di
+    1 pin1 I (strong0 strong1): 0x60000069b9a0 cpu.bus_op
+NetPartSelect(VP): _ivl_42 #(.,.,.) off=13 wid=3
+    0 pin0 O (strong0 strong1): 0x60000069bae0 cpu.do_op
+    1 pin1 I (strong0 strong1): 0x60000069b9a0 cpu.bus_op
+NetPartSelect(VP): _ivl_44 #(.,.,.) off=18 wid=1
+    0 pin0 O (strong0 strong1): 0x60000069bb60 cpu.pull
+    1 pin1 I (strong0 strong1): 0x60000069b9a0 cpu.bus_op
+NetPartSelect(VP): _ivl_46 #(.,.,.) off=19 wid=1
+    0 pin0 O (strong0 strong1): 0x60000069bec0 cpu.push
+    1 pin1 I (strong0 strong1): 0x60000069b9a0 cpu.bus_op
+NetPartSelect(VP): _ivl_48 #(.,.,.) off=21 wid=1
+    0 pin0 O (strong0 strong1): 0x60000069bba0 cpu.dw
+    1 pin1 I (strong0 strong1): 0x60000069b9a0 cpu.bus_op
+NetArrayDq: _ivl_1 array=regs
+    0 pin0 O (strong0 strong1): 0x60000069bc00 cpu.regfile._ivl_0
+    1 pin1 I (strong0 strong1): 0x60000069bbc0 cpu.regfile._ivl_2
+NetConcat: _ivl_3 #(0,0,0) scope=cpu.regfile width=4
+    0 pin0 O (strong0 strong1): 0x60000069bbc0 cpu.regfile._ivl_2
+    1 pin1 I (strong0 strong1): 0x60000069bbe0 cpu.regfile.reg_src
+    2 pin2 I (strong0 strong1): 0x60000069ba20 cpu.regfile._ivl_5
+constant 2'd0: _ivl_4 #(.,.,.)
+    0 pin0 O (strong0 strong1): 0x60000069ba20 cpu.regfile._ivl_5
+NetBUFZ: _ivl_6 scope=cpu.regfile delay=(0x0,0x0,0x0) width=24 non-transparent
+    0 pin0 O (strong0 strong1): 0x60000069c120 cpu.regfile.src
+    1 pin1 I (strong0 strong1): 0x60000069bc00 cpu.regfile._ivl_0
+NetArrayDq: _ivl_9 array=regs
+    0 pin0 O (strong0 strong1): 0x60000069bca0 cpu.regfile._ivl_8
+    1 pin1 I (strong0 strong1): 0x60000069bc60 cpu.regfile._ivl_10
+NetConcat: _ivl_11 #(0,0,0) scope=cpu.regfile width=4
+    0 pin0 O (strong0 strong1): 0x60000069bc60 cpu.regfile._ivl_10
+    1 pin1 I (strong0 strong1): 0x60000069bc80 cpu.regfile.reg_idx
+    2 pin2 I (strong0 strong1): 0x60000069bc40 cpu.regfile._ivl_13
+constant 2'd0: _ivl_12 #(.,.,.)
+    0 pin0 O (strong0 strong1): 0x60000069bc40 cpu.regfile._ivl_13
+NetBUFZ: _ivl_14 scope=cpu.regfile delay=(0x0,0x0,0x0) width=24 non-transparent
+    0 pin0 O (strong0 strong1): 0x60000069c5c0 cpu.regfile.idx
+    1 pin1 I (strong0 strong1): 0x60000069bca0 cpu.regfile._ivl_8
+logic: not #(0x0,0x0,0x0) _ivl_51 scope=cpu
+    0 pin0 O (strong0 strong1): 0x60000069bdc0 cpu._ivl_50
+    1 pin1 I (strong0 strong1): 0x60000069b940 cpu.store
+logic: and #(0x0,0x0,0x0) _ivl_53 scope=cpu
+    0 pin0 O (strong0 strong1): 0x60000069bde0 cpu._ivl_52
+    1 pin1 I (strong0 strong1): 0x60000069b980 cpu.load
+    2 pin2 I (strong0 strong1): 0x60000069bdc0 cpu._ivl_50
+logic: and #(0x0,0x0,0x0) _ivl_55 scope=cpu
+    0 pin0 O (strong0 strong1): 0x60000069bda0 cpu.regfile.reg_we
+    1 pin1 I (strong0 strong1): 0x60000069bde0 cpu._ivl_52
+    2 pin2 I (strong0 strong1): 0x60000069b780 cpu.sync
+NetPartSelect(VP): _ivl_56 #(.,.,.) off=13 wid=2
+    0 pin0 O (strong0 strong1): 0x60000069bbe0 cpu.regfile.reg_src
+    1 pin1 I (strong0 strong1): 0x60000069b800 cpu.control
+NetPartSelect(VP): _ivl_58 #(.,.,.) off=11 wid=2
+    0 pin0 O (strong0 strong1): 0x60000069be60 cpu.regfile.reg_dst
+    1 pin1 I (strong0 strong1): 0x60000069b800 cpu.control
+NetPartSelect(VP): _ivl_60 #(.,.,.) off=0 wid=2
+    0 pin0 O (strong0 strong1): 0x60000069be00 cpu._ivl_61
+    1 pin1 I (strong0 strong1): 0x60000069b800 cpu.control
+NetPartSelect(VP): _ivl_62 #(.,.,.) off=16 wid=2
+    0 pin0 O (strong0 strong1): 0x60000069be40 cpu._ivl_63
+    1 pin1 I (strong0 strong1): 0x60000069b9a0 cpu.bus_op
+logic: and #(0x0,0x0,0x0) _ivl_65 scope=cpu
+    0 pin0 O (strong0 strong1): 0x60000069bc80 cpu.regfile.reg_idx
+    1 pin1 I (strong0 strong1): 0x60000069be00 cpu._ivl_61
+    2 pin2 I (strong0 strong1): 0x60000069be40 cpu._ivl_63
+NetPartSelect(VP): _ivl_0 #(.,.,.) off=8 wid=1
+    0 pin0 O (strong0 strong1): 0x60000069bf40 cpu.alu.shift
+    1 pin1 I (strong0 strong1): 0x60000069bf20 cpu.alu_op
+NetPartSelect(VP): _ivl_2 #(.,.,.) off=7 wid=1
+    0 pin0 O (strong0 strong1): 0x60000069bee0 cpu.alu.right
+    1 pin1 I (strong0 strong1): 0x60000069bf20 cpu.alu_op
+constant 24'd0: _ivl_5 #(.,.,.)
+    0 pin0 O (strong0 strong1): 0x60000069bf60 cpu.alu._ivl_4
+LPM_COMPARE (NetCompare unsigned): _ivl_7
+    0 pin0 O (strong0 strong1): 
+    1 pin1 O (strong0 strong1): 
+    2 pin2 O (strong0 strong1): 0x60000069bfa0 cpu.alu_Z
+    3 pin3 O (strong0 strong1): 
+    4 pin4 O (strong0 strong1): 
+    5 pin5 O (strong0 strong1): 
+    6 pin6 I (strong0 strong1): 0x60000069bf80 cpu.regfile.dst
+    7 pin7 I (strong0 strong1): 0x60000069bf60 cpu.alu._ivl_4
+anyedge -> _ivl_8; 
+    0 pin0 I (strong0 strong1): 0x60000069c040 cpu.RWDTH
+    1 pin1 I (strong0 strong1): 0x60000069c560 cpu.DR
+    2 pin2 I (strong0 strong1): 0x60000069c580 cpu.D3
+    3 pin3 I (strong0 strong1): 0x60000069c100 cpu.D4
+    4 pin4 I (strong0 strong1): 0x60000069bf20 cpu.alu_op
+    5 pin5 I (strong0 strong1): 0x60000069c120 cpu.regfile.src
+    6 pin6 I (strong0 strong1): 0x60000069c140 cpu.alu.MEM
+    7 pin7 I (strong0 strong1): 0x60000069c4a0 cpu.S
+    8 pin8 I (strong0 strong1): 0x60000069c080 cpu.C
+    9 pin9 I (strong0 strong1): 0x60000069c160 cpu.alu.alu_ai
+    10 pin10 I (strong0 strong1): 0x60000069c1c0 cpu.alu.alu_bi
+    11 pin11 I (strong0 strong1): 0x60000069c1e0 cpu.alu.alu_ci
+    12 pin12 I (strong0 strong1): 0x60000069bf40 cpu.alu.shift
+    13 pin13 I (strong0 strong1): 0x60000069bee0 cpu.alu.right
+    14 pin14 I (strong0 strong1): 0x60000069c200 cpu.alu.alu_si
+    15 pin15 I (strong0 strong1): 0x60000069bf80 cpu.regfile.dst
+    16 pin16 I (strong0 strong1): 0x60000069c520 cpu.DI
+    17 pin17 I (strong0 strong1): 0x60000069c220 cpu.alu_C
+    18 pin18 I (strong0 strong1): 0x60000069c280 cpu.alu_N
+NetConcat: _ivl_1 #(0,0,0) scope=cpu.ab width=24
+    0 pin0 O (strong0 strong1): 0x60000069c0c0 cpu.AB
+    1 pin1 I (strong0 strong1): 0x60000069c240 cpu.ab.ABL
+    2 pin2 I (strong0 strong1): 0x60000069c180 cpu.ab.ABH
+    3 pin3 I (strong0 strong1): 0x60000069c2a0 cpu.ab.AB3
+NetPartSelect(VP): _ivl_2 #(.,.,.) off=0 wid=1
+    0 pin0 O (strong0 strong1): 0x60000069c2c0 cpu.ab.abl_ci
+    1 pin1 I (strong0 strong1): 0x60000069c020 cpu.ab_op
+NetPartSelect(VP): _ivl_4 #(.,.,.) off=9 wid=1
+    0 pin0 O (strong0 strong1): 0x60000069c320 cpu.ab._ivl_5
+    1 pin1 I (strong0 strong1): 0x60000069c020 cpu.ab_op
+logic: and #(0x0,0x0,0x0) _ivl_7 scope=cpu.ab
+    0 pin0 O (strong0 strong1): 0x60000069c2e0 cpu.ab.abh_ci
+    1 pin1 I (strong0 strong1): 0x60000069c320 cpu.ab._ivl_5
+    2 pin2 I (strong0 strong1): 0x60000069c340 cpu.ab.abl_co
+posedge -> _ivl_10; 
+    0 pin0 I (strong0 strong1): 0x60000069c360 cpu.clk
+anyedge -> _ivl_12; 
+    0 pin0 I (strong0 strong1): 0x60000069c020 cpu.ab_op
+    1 pin1 I (strong0 strong1): 0x60000069c4a0 cpu.S
+    2 pin2 I (strong0 strong1): 0x60000069c480 cpu.PC
+    3 pin3 I (strong0 strong1): 0x60000069c4c0 cpu.ABWDTH
+    4 pin4 I (strong0 strong1): 0x60000069c520 cpu.DI
+    5 pin5 I (strong0 strong1): 0x60000069c560 cpu.DR
+    6 pin6 I (strong0 strong1): 0x60000069c580 cpu.D3
+    7 pin7 I (strong0 strong1): 0x60000069c460 cpu.ab.ab_hold
+anyedge -> _ivl_14; 
+    0 pin0 I (strong0 strong1): 0x60000069c020 cpu.ab_op
+    1 pin1 I (strong0 strong1): 0x60000069c5a0 cpu.ab.base
+    2 pin2 I (strong0 strong1): 0x60000069c2c0 cpu.ab.abl_ci
+    3 pin3 I (strong0 strong1): 0x60000069c5c0 cpu.regfile.idx
+    4 pin4 I (strong0 strong1): 0x60000069c520 cpu.DI
+anyedge -> _ivl_16; 
+    0 pin0 I (strong0 strong1): 0x60000069c020 cpu.ab_op
+    1 pin1 I (strong0 strong1): 0x60000069c5a0 cpu.ab.base
+    2 pin2 I (strong0 strong1): 0x60000069c2e0 cpu.ab.abh_ci
+anyedge -> _ivl_18; 
+    0 pin0 I (strong0 strong1): 0x60000069c020 cpu.ab_op
+    1 pin1 I (strong0 strong1): 0x60000069c5a0 cpu.ab.base
+    2 pin2 I (strong0 strong1): 0x60000069c720 cpu.ab.abh_co
+NetPartSelect(VP): _ivl_66 #(.,.,.) off=0 wid=1
+    0 pin0 O (strong0 strong1): 0x60000069c0e0 cpu._ivl_67
+    1 pin1 I (strong0 strong1): 0x60000069ba60 cpu.we_op
+NetPartSelect(VP): _ivl_68 #(.,.,.) off=1 wid=1
+    0 pin0 O (strong0 strong1): 0x60000069c0a0 cpu._ivl_69
+    1 pin1 I (strong0 strong1): 0x60000069ba60 cpu.we_op
+logic: and #(0x0,0x0,0x0) _ivl_71 scope=cpu
+    0 pin0 O (strong0 strong1): 0x60000069c260 cpu._ivl_70
+    1 pin1 I (strong0 strong1): 0x60000069c0a0 cpu._ivl_69
+    2 pin2 I (strong0 strong1): 0x60000069b940 cpu.store
+logic: or #(0x0,0x0,0x0) _ivl_73 scope=cpu
+    0 pin0 O (strong0 strong1): 0x60000069c6c0 cpu.WE
+    1 pin1 I (strong0 strong1): 0x60000069c0e0 cpu._ivl_67
+    2 pin2 I (strong0 strong1): 0x60000069c260 cpu._ivl_70
+NetPartSelect(VP): _ivl_74 #(.,.,.) off=8 wid=1
+    0 pin0 O (strong0 strong1): 0x60000069c700 cpu._ivl_75
+    1 pin1 I (strong0 strong1): 0x60000069c6e0 cpu.DIHOLD
+NetPartSelect(VP): _ivl_76 #(.,.,.) off=0 wid=8
+    0 pin0 O (strong0 strong1): 0x60000069c1a0 cpu._ivl_77
+    1 pin1 I (strong0 strong1): 0x60000069c6e0 cpu.DIHOLD
+Multiplexer (NetMux): _ivl_79 width=8 swidth=1 size=2 scope=cpu
+    0 pin0 O (strong0 strong1): 0x60000069c740 cpu.IR
+    1 pin1 I (strong0 strong1): 0x60000069c700 cpu._ivl_75
+    2 pin2 I (strong0 strong1): 0x60000069c520 cpu.DI
+    3 pin3 I (strong0 strong1): 0x60000069c1a0 cpu._ivl_77
+NetPartSelect(VP): _ivl_80 #(.,.,.) off=0 wid=6
+    0 pin0 O (strong0 strong1): 0x60000069c780 cpu.init_state
+    1 pin1 I (strong0 strong1): 0x60000069c760 cpu.decode
+anyedge -> _ivl_84; 
+    0 pin0 I (strong0 strong1): 0x60000069bae0 cpu.do_op
+    1 pin1 I (strong0 strong1): 0x60000069bf80 cpu.regfile.dst
+    2 pin2 I (strong0 strong1): 0x60000069c8c0 cpu.php
+    3 pin3 I (strong0 strong1): 0x60000069a620 cpu.P
+    4 pin4 I (strong0 strong1): 0x60000069c480 cpu.PC
+anyedge -> _ivl_102; 
+    0 pin0 I (strong0 strong1): 0x60000069caa0 cpu.cond_code
+    1 pin1 I (strong0 strong1): 0x60000069a6c0 cpu.N
+    2 pin2 I (strong0 strong1): 0x60000069a6e0 cpu.V
+    3 pin3 I (strong0 strong1): 0x60000069c080 cpu.C
+    4 pin4 I (strong0 strong1): 0x60000069a660 cpu.Z
+anyedge -> _ivl_106; 
+    0 pin0 I (strong0 strong1): 0x60000069b760 cpu.state
+    1 pin1 I (strong0 strong1): 0x60000069dc60 cpu.cond
+    2 pin2 I (strong0 strong1): 0x60000069c520 cpu.DI
+    3 pin3 I (strong0 strong1): 0x60000069dca0 cpu.rti
+anyedge -> _ivl_110; 
+    0 pin0 I (strong0 strong1): 0x60000069c740 cpu.IR
+    1 pin1 I (strong0 strong1): 0x60000069c4c0 cpu.ABWDTH
+ELABORATED BRANCHES:
+ELABORATED PROCESSES:
+always  /* cpu.v:472 in cpu */
+  (* _ivl_schedule_push = 'sd1 *)
+  @(_ivl_110)  // cpu.v:472
+    case (IR[7:0])
+      8'd109:
+          {decode} = {<FLAG_ADD=2'd1, wid=2>, <LDA=2'd1, wid=2>, <SRC_A=2'd3, wid=2>, <DST_A=2'd3, wid=2>, <ALU_ADC=9'd6, wid=9>, <IZ=2'd0, wid=2>, ((ABWDTH)==(1'd1)) ? (<ABSW=6'd35, wid=6>) : (<ABS0=6'd6, wid=6>)};
+      8'd125:
+          {decode} = {<FLAG_ADD=2'd1, wid=2>, <LDA=2'd1, wid=2>, <SRC_A=2'd3, wid=2>, <DST_A=2'd3, wid=2>, <ALU_ADC=9'd6, wid=9>, <IX=2'd1, wid=2>, ((ABWDTH)==(1'd1)) ? (<ABSW=6'd35, wid=6>) : (<ABS0=6'd6, wid=6>)};
+      8'd121:
+          {decode} = {<FLAG_ADD=2'd1, wid=2>, <LDA=2'd1, wid=2>, <SRC_A=2'd3, wid=2>, <DST_A=2'd3, wid=2>, <ALU_ADC=9'd6, wid=9>, <IY=2'd2, wid=2>, ((ABWDTH)==(1'd1)) ? (<ABSW=6'd35, wid=6>) : (<ABS0=6'd6, wid=6>)};
+      8'd105:
+          {decode} = 25'd12453377;
+      8'd101:
+          {decode} = 25'd12453380;
+      8'd114:
+          {decode} = 25'd12453393;
+      8'd97:
+          {decode} = 25'd12453457;
+      8'd117:
+          {decode} = 25'd12453444;
+      8'd113:
+          {decode} = 25'd12453521;
+      8'd237:
+          {decode} = {<FLAG_ADD=2'd1, wid=2>, <LDA=2'd1, wid=2>, <SRC_A=2'd3, wid=2>, <DST_A=2'd3, wid=2>, <ALU_SBC=9'd14, wid=9>, <IZ=2'd0, wid=2>, ((ABWDTH)==(1'd1)) ? (<ABSW=6'd35, wid=6>) : (<ABS0=6'd6, wid=6>)};
+      8'd253:
+          {decode} = {<FLAG_ADD=2'd1, wid=2>, <LDA=2'd1, wid=2>, <SRC_A=2'd3, wid=2>, <DST_A=2'd3, wid=2>, <ALU_SBC=9'd14, wid=9>, <IX=2'd1, wid=2>, ((ABWDTH)==(1'd1)) ? (<ABSW=6'd35, wid=6>) : (<ABS0=6'd6, wid=6>)};
+      8'd249:
+          {decode} = {<FLAG_ADD=2'd1, wid=2>, <LDA=2'd1, wid=2>, <SRC_A=2'd3, wid=2>, <DST_A=2'd3, wid=2>, <ALU_SBC=9'd14, wid=9>, <IY=2'd2, wid=2>, ((ABWDTH)==(1'd1)) ? (<ABSW=6'd35, wid=6>) : (<ABS0=6'd6, wid=6>)};
+      8'd233:
+          {decode} = 25'd12455425;
+      8'd229:
+          {decode} = 25'd12455428;
+      8'd242:
+          {decode} = 25'd12455441;
+      8'd225:
+          {decode} = 25'd12455505;
+      8'd245:
+          {decode} = 25'd12455492;
+      8'd241:
+          {decode} = 25'd12455569;
+      8'd45:
+          {decode} = {<FLAG____=2'd0, wid=2>, <LDA=2'd1, wid=2>, <SRC_A=2'd3, wid=2>, <DST_A=2'd3, wid=2>, <ALU_AND=9'd80, wid=9>, <IZ=2'd0, wid=2>, ((ABWDTH)==(1'd1)) ? (<ABSW=6'd35, wid=6>) : (<ABS0=6'd6, wid=6>)};
+      8'd61:
+          {decode} = {<FLAG____=2'd0, wid=2>, <LDA=2'd1, wid=2>, <SRC_A=2'd3, wid=2>, <DST_A=2'd3, wid=2>, <ALU_AND=9'd80, wid=9>, <IX=2'd1, wid=2>, ((ABWDTH)==(1'd1)) ? (<ABSW=6'd35, wid=6>) : (<ABS0=6'd6, wid=6>)};
+      8'd57:
+          {decode} = {<FLAG____=2'd0, wid=2>, <LDA=2'd1, wid=2>, <SRC_A=2'd3, wid=2>, <DST_A=2'd3, wid=2>, <ALU_AND=9'd80, wid=9>, <IY=2'd2, wid=2>, ((ABWDTH)==(1'd1)) ? (<ABSW=6'd35, wid=6>) : (<ABS0=6'd6, wid=6>)};
+      8'd41:
+          {decode} = 25'd4083713;
+      8'd37:
+          {decode} = 25'd4083716;
+      8'd50:
+          {decode} = 25'd4083729;
+      8'd33:
+          {decode} = 25'd4083793;
+      8'd53:
+          {decode} = 25'd4083780;
+      8'd49:
+          {decode} = 25'd4083857;
+      8'd13:
+          {decode} = {<FLAG____=2'd0, wid=2>, <LDA=2'd1, wid=2>, <SRC_A=2'd3, wid=2>, <DST_A=2'd3, wid=2>, <ALU_ORA=9'd64, wid=9>, <IZ=2'd0, wid=2>, ((ABWDTH)==(1'd1)) ? (<ABSW=6'd35, wid=6>) : (<ABS0=6'd6, wid=6>)};
+      8'd29:
+          {decode} = {<FLAG____=2'd0, wid=2>, <LDA=2'd1, wid=2>, <SRC_A=2'd3, wid=2>, <DST_A=2'd3, wid=2>, <ALU_ORA=9'd64, wid=9>, <IX=2'd1, wid=2>, ((ABWDTH)==(1'd1)) ? (<ABSW=6'd35, wid=6>) : (<ABS0=6'd6, wid=6>)};
+      8'd25:
+          {decode} = {<FLAG____=2'd0, wid=2>, <LDA=2'd1, wid=2>, <SRC_A=2'd3, wid=2>, <DST_A=2'd3, wid=2>, <ALU_ORA=9'd64, wid=9>, <IY=2'd2, wid=2>, ((ABWDTH)==(1'd1)) ? (<ABSW=6'd35, wid=6>) : (<ABS0=6'd6, wid=6>)};
+      8'd9:
+          {decode} = 25'd4079617;
+      8'd5:
+          {decode} = 25'd4079620;
+      8'd18:
+          {decode} = 25'd4079633;
+      8'd1:
+          {decode} = 25'd4079697;
+      8'd21:
+          {decode} = 25'd4079684;
+      8'd17:
+          {decode} = 25'd4079761;
+      8'd173:
+          {decode} = {<FLAG____=2'd0, wid=2>, <LDA=2'd1, wid=2>, <SRC_A=2'd3, wid=2>, <DST_A=2'd3, wid=2>, <ALU_LDA=9'd16, wid=9>, <IZ=2'd0, wid=2>, ((ABWDTH)==(1'd1)) ? (<ABSW=6'd35, wid=6>) : (<ABS0=6'd6, wid=6>)};
+      8'd189:
+          {decode} = {<FLAG____=2'd0, wid=2>, <LDA=2'd1, wid=2>, <SRC_A=2'd3, wid=2>, <DST_A=2'd3, wid=2>, <ALU_LDA=9'd16, wid=9>, <IX=2'd1, wid=2>, ((ABWDTH)==(1'd1)) ? (<ABSW=6'd35, wid=6>) : (<ABS0=6'd6, wid=6>)};
+      8'd185:
+          {decode} = {<FLAG____=2'd0, wid=2>, <LDA=2'd1, wid=2>, <SRC_A=2'd3, wid=2>, <DST_A=2'd3, wid=2>, <ALU_LDA=9'd16, wid=9>, <IY=2'd2, wid=2>, ((ABWDTH)==(1'd1)) ? (<ABSW=6'd35, wid=6>) : (<ABS0=6'd6, wid=6>)};
+      8'd169:
+          {decode} = 25'd4067329;
+      8'd165:
+          {decode} = 25'd4067332;
+      8'd178:
+          {decode} = 25'd4067345;
+      8'd161:
+          {decode} = 25'd4067409;
+      8'd181:
+          {decode} = 25'd4067396;
+      8'd177:
+          {decode} = 25'd4067473;
+      8'd205:
+          {decode} = {<FLAG_CMP=2'd2, wid=2>, <NOP=2'd0, wid=2>, <SRC_A=2'd3, wid=2>, <DST__=2'bxx, wid=2>, <ALU_CMP=9'd13, wid=9>, <IZ=2'd0, wid=2>, ((ABWDTH)==(1'd1)) ? (<ABSW=6'd35, wid=6>) : (<ABS0=6'd6, wid=6>)};
+      8'd221:
+          {decode} = {<FLAG_CMP=2'd2, wid=2>, <NOP=2'd0, wid=2>, <SRC_A=2'd3, wid=2>, <DST__=2'bxx, wid=2>, <ALU_CMP=9'd13, wid=9>, <IX=2'd1, wid=2>, ((ABWDTH)==(1'd1)) ? (<ABSW=6'd35, wid=6>) : (<ABS0=6'd6, wid=6>)};
+      8'd217:
+          {decode} = {<FLAG_CMP=2'd2, wid=2>, <NOP=2'd0, wid=2>, <SRC_A=2'd3, wid=2>, <DST__=2'bxx, wid=2>, <ALU_CMP=9'd13, wid=9>, <IY=2'd2, wid=2>, ((ABWDTH)==(1'd1)) ? (<ABSW=6'd35, wid=6>) : (<ABS0=6'd6, wid=6>)};
+      8'd201:
+          {decode} = 25'b100011xx00000110100000001;
+      8'd197:
+          {decode} = 25'b100011xx00000110100000100;
+      8'd210:
+          {decode} = 25'b100011xx00000110100010001;
+      8'd193:
+          {decode} = 25'b100011xx00000110101010001;
+      8'd213:
+          {decode} = 25'b100011xx00000110101000100;
+      8'd209:
+          {decode} = 25'b100011xx00000110110010001;
+      8'd77:
+          {decode} = {<FLAG____=2'd0, wid=2>, <LDA=2'd1, wid=2>, <SRC_A=2'd3, wid=2>, <DST_A=2'd3, wid=2>, <ALU_EOR=9'd96, wid=9>, <IZ=2'd0, wid=2>, ((ABWDTH)==(1'd1)) ? (<ABSW=6'd35, wid=6>) : (<ABS0=6'd6, wid=6>)};
+      8'd93:
+          {decode} = {<FLAG____=2'd0, wid=2>, <LDA=2'd1, wid=2>, <SRC_A=2'd3, wid=2>, <DST_A=2'd3, wid=2>, <ALU_EOR=9'd96, wid=9>, <IX=2'd1, wid=2>, ((ABWDTH)==(1'd1)) ? (<ABSW=6'd35, wid=6>) : (<ABS0=6'd6, wid=6>)};
+      8'd89:
+          {decode} = {<FLAG____=2'd0, wid=2>, <LDA=2'd1, wid=2>, <SRC_A=2'd3, wid=2>, <DST_A=2'd3, wid=2>, <ALU_EOR=9'd96, wid=9>, <IY=2'd2, wid=2>, ((ABWDTH)==(1'd1)) ? (<ABSW=6'd35, wid=6>) : (<ABS0=6'd6, wid=6>)};
+      8'd73:
+          {decode} = 25'd4087809;
+      8'd69:
+          {decode} = 25'd4087812;
+      8'd82:
+          {decode} = 25'd4087825;
+      8'd65:
+          {decode} = 25'd4087889;
+      8'd85:
+          {decode} = 25'd4087876;
+      8'd81:
+          {decode} = 25'd4087953;
+      8'd141:
+          {decode} = {<FLAG____=2'd0, wid=2>, <STA=2'd2, wid=2>, <SRC_A=2'd3, wid=2>, <DST__=2'bxx, wid=2>, <ALU_REG=9'd0, wid=9>, <IZ=2'd0, wid=2>, ((ABWDTH)==(1'd1)) ? (<ABSW=6'd35, wid=6>) : (<ABS0=6'd6, wid=6>)};
+      8'd157:
+          {decode} = {<FLAG____=2'd0, wid=2>, <STA=2'd2, wid=2>, <SRC_A=2'd3, wid=2>, <DST__=2'bxx, wid=2>, <ALU_REG=9'd0, wid=9>, <IX=2'd1, wid=2>, ((ABWDTH)==(1'd1)) ? (<ABSW=6'd35, wid=6>) : (<ABS0=6'd6, wid=6>)};
+      8'd153:
+          {decode} = {<FLAG____=2'd0, wid=2>, <STA=2'd2, wid=2>, <SRC_A=2'd3, wid=2>, <DST__=2'bxx, wid=2>, <ALU_REG=9'd0, wid=9>, <IY=2'd2, wid=2>, ((ABWDTH)==(1'd1)) ? (<ABSW=6'd35, wid=6>) : (<ABS0=6'd6, wid=6>)};
+      8'd133:
+          {decode} = 25'b001011xx00000000000000100;
+      8'd146:
+          {decode} = 25'b001011xx00000000000010001;
+      8'd129:
+          {decode} = 25'b001011xx00000000001010001;
+      8'd149:
+          {decode} = 25'b001011xx00000000001000100;
+      8'd145:
+          {decode} = 25'b001011xx00000000010010001;
+      8'd10:
+          {decode} = 25'd4128768;
+      8'd74:
+          {decode} = 25'd4161536;
+      8'd42:
+          {decode} = 25'd4129536;
+      8'd106:
+          {decode} = 25'd4162304;
+      8'd14:
+          {decode} = {<FLAG____=2'd0, wid=2>, <RMW=2'd3, wid=2>, <SRC__=2'bxx, wid=2>, <DST__=2'bxx, wid=2>, <ALU_ASLM=9'd272, wid=9>, <IZ=2'd0, wid=2>, ((ABWDTH)==(1'd1)) ? (<ABWW=6'd36, wid=6>) : (<ABW0=6'd28, wid=6>)};
+      8'd30:
+          {decode} = {<FLAG____=2'd0, wid=2>, <RMW=2'd3, wid=2>, <SRC__=2'bxx, wid=2>, <DST__=2'bxx, wid=2>, <ALU_ASLM=9'd272, wid=9>, <IX=2'd1, wid=2>, ((ABWDTH)==(1'd1)) ? (<ABWW=6'd36, wid=6>) : (<ABW0=6'd28, wid=6>)};
+      8'd6:
+          {decode} = 25'b0011xxxx10001000000011011;
+      8'd22:
+          {decode} = 25'b0011xxxx10001000001011011;
+      8'd78:
+          {decode} = {<FLAG____=2'd0, wid=2>, <RMW=2'd3, wid=2>, <SRC__=2'bxx, wid=2>, <DST__=2'bxx, wid=2>, <ALU_LSRM=9'd400, wid=9>, <IZ=2'd0, wid=2>, ((ABWDTH)==(1'd1)) ? (<ABWW=6'd36, wid=6>) : (<ABW0=6'd28, wid=6>)};
+      8'd94:
+          {decode} = {<FLAG____=2'd0, wid=2>, <RMW=2'd3, wid=2>, <SRC__=2'bxx, wid=2>, <DST__=2'bxx, wid=2>, <ALU_LSRM=9'd400, wid=9>, <IX=2'd1, wid=2>, ((ABWDTH)==(1'd1)) ? (<ABWW=6'd36, wid=6>) : (<ABW0=6'd28, wid=6>)};
+      8'd70:
+          {decode} = 25'b0011xxxx11001000000011011;
+      8'd86:
+          {decode} = 25'b0011xxxx11001000001011011;
+      8'd46:
+          {decode} = {<FLAG____=2'd0, wid=2>, <RMW=2'd3, wid=2>, <SRC__=2'bxx, wid=2>, <DST__=2'bxx, wid=2>, <ALU_ROLM=9'd275, wid=9>, <IZ=2'd0, wid=2>, ((ABWDTH)==(1'd1)) ? (<ABWW=6'd36, wid=6>) : (<ABW0=6'd28, wid=6>)};
+      8'd62:
+          {decode} = {<FLAG____=2'd0, wid=2>, <RMW=2'd3, wid=2>, <SRC__=2'bxx, wid=2>, <DST__=2'bxx, wid=2>, <ALU_ROLM=9'd275, wid=9>, <IX=2'd1, wid=2>, ((ABWDTH)==(1'd1)) ? (<ABWW=6'd36, wid=6>) : (<ABW0=6'd28, wid=6>)};
+      8'd38:
+          {decode} = 25'b0011xxxx10001001100011011;
+      8'd54:
+          {decode} = 25'b0011xxxx10001001101011011;
+      8'd110:
+          {decode} = {<FLAG____=2'd0, wid=2>, <RMW=2'd3, wid=2>, <SRC__=2'bxx, wid=2>, <DST__=2'bxx, wid=2>, <ALU_RORM=9'd403, wid=9>, <IZ=2'd0, wid=2>, ((ABWDTH)==(1'd1)) ? (<ABWW=6'd36, wid=6>) : (<ABW0=6'd28, wid=6>)};
+      8'd126:
+          {decode} = {<FLAG____=2'd0, wid=2>, <RMW=2'd3, wid=2>, <SRC__=2'bxx, wid=2>, <DST__=2'bxx, wid=2>, <ALU_RORM=9'd403, wid=9>, <IX=2'd1, wid=2>, ((ABWDTH)==(1'd1)) ? (<ABWW=6'd36, wid=6>) : (<ABW0=6'd28, wid=6>)};
+      8'd102:
+          {decode} = 25'b0011xxxx11001001100011011;
+      8'd118:
+          {decode} = 25'b0011xxxx11001001101011011;
+      8'd144:
+          {decode} = 25'b0000xxxxxxxxxxxxx00001000;
+      8'd176:
+          {decode} = 25'b0000xxxxxxxxxxxxx00001000;
+      8'd240:
+          {decode} = 25'b0000xxxxxxxxxxxxx00001000;
+      8'd48:
+          {decode} = 25'b0000xxxxxxxxxxxxx00001000;
+      8'd208:
+          {decode} = 25'b0000xxxxxxxxxxxxx00001000;
+      8'd16:
+          {decode} = 25'b0000xxxxxxxxxxxxx00001000;
+      8'd128:
+          {decode} = 25'b0000xxxxxxxxxxxxx00001000;
+      8'd80:
+          {decode} = 25'b0000xxxxxxxxxxxxx00001000;
+      8'd112:
+          {decode} = 25'b0000xxxxxxxxxxxxx00001000;
+      8'd44:
+          {decode} = {<FLAG_BIT=2'd3, wid=2>, <NOP=2'd0, wid=2>, <SRC_A=2'd3, wid=2>, <DST__=2'bxx, wid=2>, <ALU_AND=9'd80, wid=9>, <IZ=2'd0, wid=2>, ((ABWDTH)==(1'd1)) ? (<ABSW=6'd35, wid=6>) : (<ABS0=6'd6, wid=6>)};
+      8'd60:
+          {decode} = {<FLAG_BIT=2'd3, wid=2>, <NOP=2'd0, wid=2>, <SRC_A=2'd3, wid=2>, <DST__=2'bxx, wid=2>, <ALU_AND=9'd80, wid=9>, <IX=2'd1, wid=2>, ((ABWDTH)==(1'd1)) ? (<ABSW=6'd35, wid=6>) : (<ABS0=6'd6, wid=6>)};
+      8'd137:
+          {decode} = 25'b110011xx00101000000000001;
+      8'd36:
+          {decode} = 25'b110011xx00101000000000100;
+      8'd52:
+          {decode} = 25'b110011xx00101000001000100;
+      8'd24:
+          {decode} = 25'b0000xxxxxxxxxxxxx00000000;
+      8'd216:
+          {decode} = 25'b0000xxxxxxxxxxxxx00000000;
+      8'd88:
+          {decode} = 25'b0000xxxxxxxxxxxxx00000000;
+      8'd184:
+          {decode} = 25'b0000xxxxxxxxxxxxx00000000;
+      8'd56:
+          {decode} = 25'b0000xxxxxxxxxxxxx00000000;
+      8'd248:
+          {decode} = 25'b0000xxxxxxxxxxxxx00000000;
+      8'd120:
+          {decode} = 25'b0000xxxxxxxxxxxxx00000000;
+      8'd234:
+          {decode} = 25'b0000xxxxxxxxxxxxx00000000;
+      8'd236:
+          {decode} = {<FLAG_CMP=2'd2, wid=2>, <NOP=2'd0, wid=2>, <SRC_X=2'd1, wid=2>, <DST__=2'bxx, wid=2>, <ALU_CMP=9'd13, wid=9>, <IZ=2'd0, wid=2>, ((ABWDTH)==(1'd1)) ? (<ABSW=6'd35, wid=6>) : (<ABS0=6'd6, wid=6>)};
+      8'd224:
+          {decode} = 25'b100001xx00000110100000001;
+      8'd228:
+          {decode} = 25'b100001xx00000110100000100;
+      8'd204:
+          {decode} = {<FLAG_CMP=2'd2, wid=2>, <NOP=2'd0, wid=2>, <SRC_Y=2'd2, wid=2>, <DST__=2'bxx, wid=2>, <ALU_CMP=9'd13, wid=9>, <IZ=2'd0, wid=2>, ((ABWDTH)==(1'd1)) ? (<ABSW=6'd35, wid=6>) : (<ABS0=6'd6, wid=6>)};
+      8'd192:
+          {decode} = 25'b100010xx00000110100000001;
+      8'd196:
+          {decode} = 25'b100010xx00000110100000100;
+      8'd206:
+          {decode} = {<FLAG____=2'd0, wid=2>, <RMW=2'd3, wid=2>, <SRC__=2'bxx, wid=2>, <DST__=2'bxx, wid=2>, <ALU_DECM=9'd24, wid=9>, <IZ=2'd0, wid=2>, ((ABWDTH)==(1'd1)) ? (<ABWW=6'd36, wid=6>) : (<ABW0=6'd28, wid=6>)};
+      8'd222:
+          {decode} = {<FLAG____=2'd0, wid=2>, <RMW=2'd3, wid=2>, <SRC__=2'bxx, wid=2>, <DST__=2'bxx, wid=2>, <ALU_DECM=9'd24, wid=9>, <IX=2'd1, wid=2>, ((ABWDTH)==(1'd1)) ? (<ABWW=6'd36, wid=6>) : (<ABW0=6'd28, wid=6>)};
+      8'd198:
+          {decode} = 25'b0011xxxx00001100000011011;
+      8'd214:
+          {decode} = 25'b0011xxxx00001100001011011;
+      8'd238:
+          {decode} = {<FLAG____=2'd0, wid=2>, <RMW=2'd3, wid=2>, <SRC__=2'bxx, wid=2>, <DST__=2'bxx, wid=2>, <ALU_INCM=9'd17, wid=9>, <IZ=2'd0, wid=2>, ((ABWDTH)==(1'd1)) ? (<ABWW=6'd36, wid=6>) : (<ABW0=6'd28, wid=6>)};
+      8'd254:
+          {decode} = {<FLAG____=2'd0, wid=2>, <RMW=2'd3, wid=2>, <SRC__=2'bxx, wid=2>, <DST__=2'bxx, wid=2>, <ALU_INCM=9'd17, wid=9>, <IX=2'd1, wid=2>, ((ABWDTH)==(1'd1)) ? (<ABWW=6'd36, wid=6>) : (<ABW0=6'd28, wid=6>)};
+      8'd230:
+          {decode} = 25'b0011xxxx00001000100011011;
+      8'd246:
+          {decode} = 25'b0011xxxx00001000101011011;
+      8'd58:
+          {decode} = 25'd4065280;
+      8'd202:
+          {decode} = 25'd2754560;
+      8'd136:
+          {decode} = 25'd3409920;
+      8'd26:
+          {decode} = 25'd4063488;
+      8'd232:
+          {decode} = 25'd2752768;
+      8'd200:
+          {decode} = 25'd3408128;
+      8'd170:
+          {decode} = 25'd3801088;
+      8'd168:
+          {decode} = 25'd3932160;
+      8'd186:
+          {decode} = 25'b0001xx0100111000000000000;
+      8'd138:
+          {decode} = 25'd3014656;
+      8'd154:
+          {decode} = 25'b000001xx00000000000000000;
+      8'd152:
+          {decode} = 25'd3538944;
+      8'd0:
+          {decode} = 25'b0000xxxxxxxxxxxxx00010100;
+      8'd76:
+          {decode} = {<FLAG____=2'd0, wid=2>, <NOP=2'd0, wid=2>, <SRC__=2'bxx, wid=2>, <DST__=2'bxx, wid=2>, <ALU_____=9'bxxxxxxxxx, wid=9>, <IZ=2'd0, wid=2>, ((ABWDTH)==(1'd1)) ? (<JMPW=6'd33, wid=6>) : (<JMP0=6'd15, wid=6>)};
+      8'd108:
+          {decode} = {<FLAG____=2'd0, wid=2>, <NOP=2'd0, wid=2>, <SRC__=2'bxx, wid=2>, <DST__=2'bxx, wid=2>, <ALU_____=9'bxxxxxxxxx, wid=9>, <IZ=2'd0, wid=2>, ((ABWDTH)==(1'd1)) ? (<INDW=6'd34, wid=6>) : (<IND0=6'd25, wid=6>)};
+      8'd124:
+          {decode} = {<FLAG____=2'd0, wid=2>, <NOP=2'd0, wid=2>, <SRC__=2'bxx, wid=2>, <DST__=2'bxx, wid=2>, <ALU_____=9'bxxxxxxxxx, wid=9>, <IX=2'd1, wid=2>, ((ABWDTH)==(1'd1)) ? (<INDW=6'd34, wid=6>) : (<IND0=6'd25, wid=6>)};
+      8'd32:
+          {decode} = {<FLAG____=2'd0, wid=2>, <NOP=2'd0, wid=2>, <SRC__=2'bxx, wid=2>, <DST__=2'bxx, wid=2>, <ALU_____=9'bxxxxxxxxx, wid=9>, <IZ=2'd0, wid=2>, ((ABWDTH)==(1'd1)) ? (<JSRW=6'd37, wid=6>) : (<JSR0=6'd9, wid=6>)};
+      8'd64:
+          {decode} = 25'b0000xxxxxxxxxxxxx00011000;
+      8'd96:
+          {decode} = 25'b0000xxxxxxxxxxxxx00001100;
+      8'd174:
+          {decode} = {<FLAG____=2'd0, wid=2>, <LDA=2'd1, wid=2>, <SRC__=2'bxx, wid=2>, <DST_X=2'd1, wid=2>, <ALU_LDA=9'd16, wid=9>, <IZ=2'd0, wid=2>, ((ABWDTH)==(1'd1)) ? (<ABSW=6'd35, wid=6>) : (<ABS0=6'd6, wid=6>)};
+      8'd190:
+          {decode} = {<FLAG____=2'd0, wid=2>, <LDA=2'd1, wid=2>, <SRC__=2'bxx, wid=2>, <DST_X=2'd1, wid=2>, <ALU_LDA=9'd16, wid=9>, <IY=2'd2, wid=2>, ((ABWDTH)==(1'd1)) ? (<ABSW=6'd35, wid=6>) : (<ABS0=6'd6, wid=6>)};
+      8'd162:
+          {decode} = 25'b0001xx0100001000000000001;
+      8'd166:
+          {decode} = 25'b0001xx0100001000000000100;
+      8'd182:
+          {decode} = 25'b0001xx0100001000010000100;
+      8'd172:
+          {decode} = {<FLAG____=2'd0, wid=2>, <LDA=2'd1, wid=2>, <SRC__=2'bxx, wid=2>, <DST_Y=2'd2, wid=2>, <ALU_LDA=9'd16, wid=9>, <IZ=2'd0, wid=2>, ((ABWDTH)==(1'd1)) ? (<ABSW=6'd35, wid=6>) : (<ABS0=6'd6, wid=6>)};
+      8'd188:
+          {decode} = {<FLAG____=2'd0, wid=2>, <LDA=2'd1, wid=2>, <SRC__=2'bxx, wid=2>, <DST_Y=2'd2, wid=2>, <ALU_LDA=9'd16, wid=9>, <IX=2'd1, wid=2>, ((ABWDTH)==(1'd1)) ? (<ABSW=6'd35, wid=6>) : (<ABS0=6'd6, wid=6>)};
+      8'd160:
+          {decode} = 25'b0001xx1000001000000000001;
+      8'd164:
+          {decode} = 25'b0001xx1000001000000000100;
+      8'd180:
+          {decode} = 25'b0001xx1000001000001000100;
+      8'd72:
+          {decode} = 25'b000011xx00000000000000010;
+      8'd218:
+          {decode} = 25'b000001xx00000000000000010;
+      8'd90:
+          {decode} = 25'b000010xx00000000000000010;
+      8'd104:
+          {decode} = 25'b0001xx1101xxxxxxx00000011;
+      8'd250:
+          {decode} = 25'b0001xx0101xxxxxxx00000011;
+      8'd122:
+          {decode} = 25'b0001xx1001xxxxxxx00000011;
+      8'd8:
+          {decode} = 25'b0000xxxx00000000000000010;
+      8'd40:
+          {decode} = 25'b0000xxxxxxxxxxxxx00000011;
+      8'd142:
+          {decode} = {<FLAG____=2'd0, wid=2>, <STA=2'd2, wid=2>, <SRC_X=2'd1, wid=2>, <DST__=2'bxx, wid=2>, <ALU_REG=9'd0, wid=9>, <IZ=2'd0, wid=2>, ((ABWDTH)==(1'd1)) ? (<ABSW=6'd35, wid=6>) : (<ABS0=6'd6, wid=6>)};
+      8'd134:
+          {decode} = 25'b001001xx00000000000000100;
+      8'd150:
+          {decode} = 25'b001001xx00000000010000100;
+      8'd140:
+          {decode} = {<FLAG____=2'd0, wid=2>, <STA=2'd2, wid=2>, <SRC_Y=2'd2, wid=2>, <DST__=2'bxx, wid=2>, <ALU_REG=9'd0, wid=9>, <IZ=2'd0, wid=2>, ((ABWDTH)==(1'd1)) ? (<ABSW=6'd35, wid=6>) : (<ABS0=6'd6, wid=6>)};
+      8'd132:
+          {decode} = 25'b001010xx00000000000000100;
+      8'd148:
+          {decode} = 25'b001010xx00000000001000100;
+      8'd156:
+          {decode} = {<FLAG____=2'd0, wid=2>, <STA=2'd2, wid=2>, <SRC_Z=2'd0, wid=2>, <DST__=2'bxx, wid=2>, <ALU_REG=9'd0, wid=9>, <IZ=2'd0, wid=2>, ((ABWDTH)==(1'd1)) ? (<ABSW=6'd35, wid=6>) : (<ABS0=6'd6, wid=6>)};
+      8'd158:
+          {decode} = {<FLAG____=2'd0, wid=2>, <STA=2'd2, wid=2>, <SRC_Z=2'd0, wid=2>, <DST__=2'bxx, wid=2>, <ALU_REG=9'd0, wid=9>, <IX=2'd1, wid=2>, ((ABWDTH)==(1'd1)) ? (<ABSW=6'd35, wid=6>) : (<ABS0=6'd6, wid=6>)};
+      8'd100:
+          {decode} = 25'b001000xx00000000000000100;
+      8'd116:
+          {decode} = 25'b001000xx00000000001000100;
+      8'd15:
+          {decode} = 25'b0000xxxxxxxxxxxxx00000000;
+      8'd31:
+          {decode} = 25'b0000xxxxxxxxxxxxx00000000;
+      8'd79:
+          {decode} = 25'b0000xxxxxxxxxxxxx00000000;
+      8'd143:
+          {decode} = 25'b0000xxxxxxxxxxxxx00000000;
+      8'd95:
+          {decode} = 25'b0000xxxxxxxxxxxxx00000000;
+      8'd159:
+          {decode} = 25'b0000xxxxxxxxxxxxx00000000;
+      8'd28:
+          {decode} = {21'd0, ((ABWDTH)==(1'd1)) ? (<ABSW=6'd35, wid=6>) : (<ABS0=6'd6, wid=6>)};
+      8'd20:
+          {decode} = 25'd4;
+      8'd12:
+          {decode} = {21'd0, ((ABWDTH)==(1'd1)) ? (<ABSW=6'd35, wid=6>) : (<ABS0=6'd6, wid=6>)};
+      8'd4:
+          {decode} = 25'd4;
+      default:
+          {decode} = 25'bxxxxxxxxxxxxxxxxxxx000000;
+    endcase
+always  /* cpu.v:432 in cpu */
+  @(_ivl_10)  // cpu.v:432
+    if (sync)
+        begin
+            {control} <= <select=decode[24:0]['sd6+:19] expr_type=logic>;
+            {clc} <= (IR[7:0])==(8'd24);
+            {sec} <= (IR[7:0])==(8'd56);
+            {cld} <= (IR[7:0])==(8'd216);
+            {sed} <= (IR[7:0])==(8'd248);
+            {cli} <= (IR[7:0])==(8'd88);
+            {sei} <= (IR[7:0])==(8'd120);
+            {rti} <= (IR[7:0])==(8'd64);
+            {clv} <= (IR[7:0])==(8'd184);
+            {php} <= ((IR[7:0])==(8'd8))||((IR[7:0])==(8'd0));
+            {plp} <= (IR[7:0])==(8'd40);
+            {txs} <= (IR[7:0])==(8'd154);
+            {variation} <= (IR[7:0])==(8'd15);
+            {ABWDTH} = <select=PREFIX[2:0]['sd0+:1] expr_type=logic>;
+            {RWDTH} = <select=PREFIX[2:0]['sd1+:2] expr_type=logic>;
+            {RBYTES} = RWDTH[1:0];
+            if ((<select=IR[7:0]['sd0+:4] expr_type=logic>)==(4'd15))
+                {PREFIX} = {<select=IR[7:0]['sd6+:2] expr_type=logic>, <select=IR[7:0]['sd4+:1] expr_type=logic>};
+            else
+                if ((IR[7:0])==(8'd64))
+                    begin
+                        {ABWDTH} = 1'd1;
+                        {RWDTH} = <R_08=2'd0, wid=2>;
+                        {PREFIX} = {RWDTH[1:0], ABWDTH};
+                    end
+                else
+                    {PREFIX} = 3'd0;
+        end
+always  /* cpu.v:373 in cpu */
+  (* _ivl_schedule_push = 'sd1 *)
+  @(_ivl_106)  // cpu.v:373
+    case (state[5:0])
+      <ABSW=6'd35, wid=6>:
+          {bus_op} = 24'b00000000xxx1000000101000;
+      <ABS0=6'd6, wid=6>:
+          {bus_op} = 24'b00000000xxx1000000101000;
+      <ABS1=6'd7, wid=6>:
+          {bus_op} = 24'd199314;
+      <ABSR=6'd44, wid=6>:
+          {bus_op} = 24'd203417;
+      <ABWW=6'd36, wid=6>:
+          {bus_op} = 24'b00000000xxx1000000101000;
+      <ABW0=6'd28, wid=6>:
+          {bus_op} = 24'b00000000xxx1000000101000;
+      <ABW1=6'd29, wid=6>:
+          {bus_op} = 24'b00000011xxx0001010010010;
+      <BRA0=6'd8, wid=6>:
+          if ((cond)&(<select=DI[7:0]['sd7+:1] expr_type=logic>))
+              {bus_op} = 24'b00000000xxx0001100101100;
+          else
+              if (cond)
+                  {bus_op} = 24'b00000000xxx0001000101100;
+              else
+                  {bus_op} = 24'b00000000xxx0000000101000;
+      <BRK0=6'd20, wid=6>:
+          {bus_op} = 24'd541952;
+      <BRK1=6'd21, wid=6>:
+          {bus_op} = 24'd533760;
+      <BRK2=6'd22, wid=6>:
+          {bus_op} = 24'd550240;
+      <BRK3=6'd23, wid=6>:
+          {bus_op} = 24'b00000000xxx1000000101000;
+      <BRK4=6'd32, wid=6>:
+          {bus_op} = 24'b00000000xxx0000000101000;
+      <DATA=6'd5, wid=6>:
+          {bus_op} = 24'b00000000xxx1000000101000;
+      <IDX0=6'd17, wid=6>:
+          {bus_op} = 24'b00000001xxx1000010000110;
+      <IDX1=6'd18, wid=6>:
+          {bus_op} = 24'b00000000xxx1001000011001;
+      <IDX2=6'd19, wid=6>:
+          {bus_op} = 24'd133778;
+      <IMM0=6'd1, wid=6>:
+          {bus_op} = 24'b00000000xxx1000000101000;
+      <IMMR=6'd43, wid=6>:
+          {bus_op} = 24'b00000000xxx1000000101000;
+      <INDW=6'd34, wid=6>:
+          {bus_op} = 24'b00000000xxx1000000101000;
+      <IND0=6'd25, wid=6>:
+          {bus_op} = 24'b00000000xxx1000000101000;
+      <IND1=6'd26, wid=6>:
+          {bus_op} = 24'b00000001xxx0001000110010;
+      <JMPW=6'd33, wid=6>:
+          {bus_op} = 24'b00000000xxx1000000101000;
+      <JMP0=6'd15, wid=6>:
+          {bus_op} = 24'b00000000xxx1000000101000;
+      <JMP1=6'd16, wid=6>:
+          {bus_op} = 24'b00000000xxx0001000110010;
+      <JSRW=6'd37, wid=6>:
+          {bus_op} = 24'd562432;
+      <JSRH=6'd38, wid=6>:
+          {bus_op} = 24'd541952;
+      <JSR3=6'd40, wid=6>:
+          {bus_op} = 24'b00000000xxx0000000101000;
+      <JSR4=6'd41, wid=6>:
+          {bus_op} = 24'b00000000xxx0000000101000;
+      <JSRL=6'd39, wid=6>:
+          {bus_op} = 24'd537856;
+      <JSR0=6'd9, wid=6>:
+          {bus_op} = 24'd546048;
+      <JSR1=6'd10, wid=6>:
+          {bus_op} = 24'd533760;
+      <JSR2=6'd11, wid=6>:
+          {bus_op} = 24'b00000000xxx0000000101000;
+      <PHA0=6'd2, wid=6>:
+          {bus_op} = 24'd550144;
+      <PLA0=6'd3, wid=6>:
+          {bus_op} = 24'b00000100xxx1000100000001;
+      <RMW0=6'd30, wid=6>:
+          {bus_op} = 24'b00000000xxx1000000101000;
+      <RMW1=6'd31, wid=6>:
+          {bus_op} = 24'd1560;
+      <RTI0=6'd24, wid=6>:
+          {bus_op} = 24'b00000100xxx0000100000001;
+      <RTS0=6'd12, wid=6>:
+          {bus_op} = 24'b00000100xxx0000100000001;
+      <RTS1=6'd13, wid=6>:
+          {bus_op} = 24'b00000100xxx1000100000001;
+      <RTSW=6'd42, wid=6>:
+          {bus_op} = 24'b00000100xxx1000100000001;
+      <RTS2=6'd14, wid=6>:
+          if (rti)
+              {bus_op} = 24'b00000000xxx0001000110010;
+          else
+              {bus_op} = 24'b00000000xxx0001000110001;
+      <SYNC=6'd0, wid=6>:
+          {bus_op} = 24'b00000000xxx0000000101000;
+      <ZPG0=6'd4, wid=6>:
+          {bus_op} = 24'd198790;
+      <ZPW0=6'd27, wid=6>:
+          {bus_op} = 24'b00000011xxx0000010000110;
+      default:
+          {bus_op} = 24'b00000000xxx0000000101000;
+    endcase
+always  /* cpu.v:299 in cpu */
+  @(_ivl_10)  // cpu.v:299
+    if (RST)
+        begin
+            {ABWDTH} = 1'd1;
+            {RWDTH} = <R_08=2'd0, wid=2>;
+            {RBYTES} = <R_08=2'd0, wid=2>;
+            {PREFIX} = {RWDTH[1:0], ABWDTH};
+            {state} <= <BRK4=6'd32, wid=6>;
+        end
+    else
+        case (state[5:0])
+          <SYNC=6'd0, wid=6>:
+              {state} <= init_state[5:0];
+          <ABSW=6'd35, wid=6>:
+              {state} <= <ABS0=6'd6, wid=6>;
+          <ABS0=6'd6, wid=6>:
+              {state} <= <ABS1=6'd7, wid=6>;
+          <ABS1=6'd7, wid=6>:
+              {state} <= ((<select=RBYTES[1:0][(0)+:32] expr_type=logic>)==(32'b00000000000000000000000000000000)) ? (<DATA=6'd5, wid=6>) : (<ABSR=6'd44, wid=6>);
+          <ABSR=6'd44, wid=6>:
+              begin
+                  {RBYTES} -= 2'd1;
+                  if ((<select=RBYTES[1:0][(0)+:32] expr_type=logic>)==(32'b00000000000000000000000000000000))
+                      {state} <= <DATA=6'd5, wid=6>;
+              end
+          <ABWW=6'd36, wid=6>:
+              {state} <= <ABWW=6'd36, wid=6>;
+          <ABW0=6'd28, wid=6>:
+              {state} <= <ABW1=6'd29, wid=6>;
+          <ABW1=6'd29, wid=6>:
+              {state} <= <RMW0=6'd30, wid=6>;
+          <BRA0=6'd8, wid=6>:
+              {state} <= <SYNC=6'd0, wid=6>;
+          <BRK0=6'd20, wid=6>:
+              {state} <= <BRK1=6'd21, wid=6>;
+          <BRK1=6'd21, wid=6>:
+              {state} <= <BRK2=6'd22, wid=6>;
+          <BRK2=6'd22, wid=6>:
+              {state} <= <BRK3=6'd23, wid=6>;
+          <BRK3=6'd23, wid=6>:
+              {state} <= <JMP0=6'd15, wid=6>;
+          <BRK4=6'd32, wid=6>:
+              {state} <= <BRK3=6'd23, wid=6>;
+          <DATA=6'd5, wid=6>:
+              {state} <= <SYNC=6'd0, wid=6>;
+          <IDX0=6'd17, wid=6>:
+              {state} <= <IDX1=6'd18, wid=6>;
+          <IDX1=6'd18, wid=6>:
+              {state} <= <IDX2=6'd19, wid=6>;
+          <IDX2=6'd19, wid=6>:
+              {state} <= <DATA=6'd5, wid=6>;
+          <IMM0=6'd1, wid=6>:
+              {state} <= ((<select=RBYTES[1:0][(0)+:32] expr_type=logic>)==(32'b00000000000000000000000000000000)) ? (<SYNC=6'd0, wid=6>) : (<IMMR=6'd43, wid=6>);
+          <IMMR=6'd43, wid=6>:
+              begin
+                  {RBYTES} -= 2'd1;
+                  if ((<select=RBYTES[1:0][(0)+:32] expr_type=logic>)==(32'b00000000000000000000000000000000))
+                      {state} <= <SYNC=6'd0, wid=6>;
+              end
+          <INDW=6'd34, wid=6>:
+              {state} <= <IND0=6'd25, wid=6>;
+          <IND0=6'd25, wid=6>:
+              {state} <= <IND1=6'd26, wid=6>;
+          <IND1=6'd26, wid=6>:
+              {state} <= ((ABWDTH)===(1'd0)) ? (<JMP0=6'd15, wid=6>) : (<JMPW=6'd33, wid=6>);
+          <JMPW=6'd33, wid=6>:
+              {state} <= <JMP0=6'd15, wid=6>;
+          <JMP0=6'd15, wid=6>:
+              {state} <= <JMP1=6'd16, wid=6>;
+          <JMP1=6'd16, wid=6>:
+              {state} <= <SYNC=6'd0, wid=6>;
+          <JSRW=6'd37, wid=6>:
+              {state} <= <JSRH=6'd38, wid=6>;
+          <JSRH=6'd38, wid=6>:
+              {state} <= <JSR3=6'd40, wid=6>;
+          <JSR3=6'd40, wid=6>:
+              {state} <= <JSRL=6'd39, wid=6>;
+          <JSRL=6'd39, wid=6>:
+              {state} <= <JSR4=6'd41, wid=6>;
+          <JSR4=6'd41, wid=6>:
+              {state} <= <JMP1=6'd16, wid=6>;
+          <JSR0=6'd9, wid=6>:
+              {state} <= <JSR1=6'd10, wid=6>;
+          <JSR1=6'd10, wid=6>:
+              {state} <= <JSR2=6'd11, wid=6>;
+          <JSR2=6'd11, wid=6>:
+              {state} <= <JMP1=6'd16, wid=6>;
+          <PHA0=6'd2, wid=6>:
+              {state} <= <SYNC=6'd0, wid=6>;
+          <PLA0=6'd3, wid=6>:
+              {state} <= <SYNC=6'd0, wid=6>;
+          <RMW0=6'd30, wid=6>:
+              {state} <= <RMW1=6'd31, wid=6>;
+          <RMW1=6'd31, wid=6>:
+              {state} <= <SYNC=6'd0, wid=6>;
+          <RTI0=6'd24, wid=6>:
+              {state} <= <RTS0=6'd12, wid=6>;
+          <RTS0=6'd12, wid=6>:
+              {state} <= ((ABWDTH)===(1'd0)) ? (<RTS1=6'd13, wid=6>) : (<RTSW=6'd42, wid=6>);
+          <RTSW=6'd42, wid=6>:
+              {state} <= <RTS1=6'd13, wid=6>;
+          <RTS1=6'd13, wid=6>:
+              {state} <= <RTS2=6'd14, wid=6>;
+          <RTS2=6'd14, wid=6>:
+              {state} <= <SYNC=6'd0, wid=6>;
+          <ZPG0=6'd4, wid=6>:
+              {state} <= <DATA=6'd5, wid=6>;
+          <ZPW0=6'd27, wid=6>:
+              {state} <= <RMW0=6'd30, wid=6>;
+          default:
+              {state} <= <SYNC=6'd0, wid=6>;
+        endcase
+always  /* cpu.v:280 in cpu */
+  (* _ivl_schedule_push = 'sd1 *)
+  @(_ivl_102)  // cpu.v:280
+    casez (cond_code[3:0])
+      4'b000z:
+          {cond} = ~(N);
+      4'b001z:
+          {cond} = N;
+      4'b010z:
+          {cond} = ~(V);
+      4'b011z:
+          {cond} = V;
+      4'd8:
+          {cond} = 1'sd-1;
+      4'd9:
+          {cond} = ~(C);
+      4'b101z:
+          {cond} = C;
+      4'b110z:
+          {cond} = ~(Z);
+      4'b111z:
+          {cond} = Z;
+    endcase
+always  /* cpu.v:277 in cpu */
+  @(_ivl_10)  // cpu.v:277
+    {cond_code} <= <select=IR[7:0]['sd4+:4] expr_type=logic>;
+always  /* cpu.v:264 in cpu */
+  @(_ivl_10)  // cpu.v:264
+    case (state[5:0])
+      <PLA0=6'd3, wid=6>:
+          {DIHOLD} <= {1'd1, DI[7:0]};
+      <PHA0=6'd2, wid=6>:
+          {DIHOLD} <= {1'd1, DI[7:0]};
+      <RMW1=6'd31, wid=6>:
+          {DIHOLD} <= {1'd1, DI[7:0]};
+      default:
+          {DIHOLD} <= {1'd0, DI[7:0]};
+    endcase
+always  /* cpu.v:245 in cpu */
+  @(_ivl_10)  // cpu.v:245
+    case (state[5:0])
+      <RTS0=6'd12, wid=6>:
+          if (rti)
+              {C} <= <select=DI[7:0]['sd0+:1] expr_type=logic>;
+      <SYNC=6'd0, wid=6>:
+          if (plp)
+              {C} <= <select=DI[7:0]['sd0+:1] expr_type=logic>;
+          else
+              if (clc)
+                  {C} <= 1'sd0;
+              else
+                  if (sec)
+                      {C} <= 1'sd-1;
+                  else
+                      if (((cmp)|(shift))|(adc_sbc))
+                          {C} <= alu_C;
+      default: ;
+    endcase
+always  /* cpu.v:234 in cpu */
+  @(_ivl_10)  // cpu.v:234
+    case (state[5:0])
+      <RTS0=6'd12, wid=6>:
+          if (rti)
+              {Z} <= <select=DI[7:0]['sd1+:1] expr_type=logic>;
+      <SYNC=6'd0, wid=6>:
+          if (plp)
+              {Z} <= <select=DI[7:0]['sd1+:1] expr_type=logic>;
+          else
+              if (((load)|(cmp))|(bit_isn))
+                  {Z} <= alu_Z;
+      default: ;
+    endcase
+always  /* cpu.v:221 in cpu */
+  @(_ivl_10)  // cpu.v:221
+    case (state[5:0])
+      <BRK4=6'd32, wid=6>:
+          {I} <= 1'sd-1;
+      <RTS0=6'd12, wid=6>:
+          if (rti)
+              {I} <= <select=DI[7:0]['sd2+:1] expr_type=logic>;
+      <SYNC=6'd0, wid=6>:
+          if (plp)
+              {I} <= <select=DI[7:0]['sd2+:1] expr_type=logic>;
+          else
+              if (cli)
+                  {I} <= 1'sd0;
+              else
+                  if (sei)
+                      {I} <= 1'sd-1;
+      default: ;
+    endcase
+always  /* cpu.v:209 in cpu */
+  @(_ivl_10)  // cpu.v:209
+    case (state[5:0])
+      <RTS0=6'd12, wid=6>:
+          if (rti)
+              {D} <= <select=DI[7:0]['sd3+:1] expr_type=logic>;
+      <SYNC=6'd0, wid=6>:
+          if (plp)
+              {D} <= <select=DI[7:0]['sd3+:1] expr_type=logic>;
+          else
+              if (cld)
+                  {D} <= 1'sd0;
+              else
+                  if (sed)
+                      {D} <= 1'sd-1;
+      default: ;
+    endcase
+always  /* cpu.v:196 in cpu */
+  @(_ivl_10)  // cpu.v:196
+    case (state[5:0])
+      <RTS0=6'd12, wid=6>:
+          if (rti)
+              {V} <= <select=DI[7:0]['sd6+:1] expr_type=logic>;
+      <SYNC=6'd0, wid=6>:
+          if (plp)
+              {V} <= <select=DI[7:0]['sd6+:1] expr_type=logic>;
+          else
+              if (clv)
+                  {V} <= 1'sd0;
+              else
+                  if (bit_isn)
+                      {V} <= <select=DI[7:0]['sd6+:1] expr_type=logic>;
+                  else
+                      if (adc_sbc)
+                          {V} <= alu_V;
+      default: ;
+    endcase
+always  /* cpu.v:183 in cpu */
+  @(_ivl_10)  // cpu.v:183
+    case (state[5:0])
+      <RTS0=6'd12, wid=6>:
+          if (rti)
+              {N} <= <select=DI[7:0]['sd7+:1] expr_type=logic>;
+      <SYNC=6'd0, wid=6>:
+          if (plp)
+              {N} <= <select=DI[7:0]['sd7+:1] expr_type=logic>;
+          else
+              if (bit_isn)
+                  {N} <= <select=DI[7:0]['sd7+:1] expr_type=logic>;
+              else
+                  if ((load)|(cmp))
+                      {N} <= alu_N;
+      default: ;
+    endcase
+always  /* cpu.v:166 in cpu */
+  (* _ivl_schedule_push = 'sd1 *)
+  @(_ivl_84)  // cpu.v:166
+    case (do_op[2:0])
+      <DO_ALU=3'd0, wid=3>:
+          {DO} = alu_out[23:0];
+      <DO_PHP=3'd3, wid=3>:
+          {DO} = (php) ? (<select={8'd0, P[7:0]}[(0)+:24] expr_type=logic>) : (alu_out[23:0]);
+      <DO_PCL=3'd1, wid=3>:
+          {DO} = {8'd0, <select=PC[23:0]['sd0+:8] expr_type=logic>};
+      <DO_PCH=3'd2, wid=3>:
+          {DO} = {8'd0, <select=PC[23:0]['sd8+:8] expr_type=logic>};
+      <DO_PC3=3'd4, wid=3>:
+          {DO} = {8'd0, <select=PC[23:0]['sd16+:8] expr_type=logic>};
+      default: ;
+    endcase
+always  /* cpu.v:155 in cpu */
+  @(_ivl_10)  // cpu.v:155
+    if (dr_di)
+        begin
+            {D4} = D3[7:0];
+            {D3} = DR[7:0];
+            {DR} <= DI[7:0];
+        end
+initial  /* cpu.v:13 in cpu */
+  {DIHOLD} = 9'd490;
+always  /* ab.v:112 in cpu.ab */
+  (* _ivl_schedule_push = 'sd1 *)
+  @(_ivl_18)  // ab.v:112
+    case (<select=ab_op[9:0]['sd8+:2] expr_type=logic>)
+      2'd3:
+          {AB3} = ((<select=base[23:0]['sd16+:8] expr_type=logic>)+(8'd255))+(<select=abh_co[(0)+:8] expr_type=logic>);
+      default:
+          {AB3} = (<select=base[23:0]['sd16+:8] expr_type=logic>)+(<select=abh_co[(0)+:8] expr_type=logic>);
+    endcase
+always  /* ab.v:99 in cpu.ab */
+  (* _ivl_schedule_push = 'sd1 *)
+  @(_ivl_16)  // ab.v:99
+    case (<select=ab_op[9:0]['sd8+:2] expr_type=logic>)
+      2'd0:
+          {ABH, abh_co} = ((<select=<select=base[23:0]['sd8+:8] expr_type=logic>[(0)+:9] expr_type=logic>)+(9'd0))+(<select=abh_ci[(0)+:9] expr_type=logic>);
+      2'd1:
+          {ABH, abh_co} = ((<select=<select=base[23:0]['sd8+:8] expr_type=logic>[(0)+:9] expr_type=logic>)+(9'd1))+(<select=abh_ci[(0)+:9] expr_type=logic>);
+      2'd2:
+          {ABH, abh_co} = ((<select=<select=base[23:0]['sd8+:8] expr_type=logic>[(0)+:9] expr_type=logic>)+(9'd0))+(<select=abh_ci[(0)+:9] expr_type=logic>);
+      2'd3:
+          {ABH, abh_co} = ((<select=<select=base[23:0]['sd8+:8] expr_type=logic>[(0)+:9] expr_type=logic>)+(9'd255))+(<select=abh_ci[(0)+:9] expr_type=logic>);
+    endcase
+always  /* ab.v:79 in cpu.ab */
+  (* _ivl_schedule_push = 'sd1 *)
+  @(_ivl_14)  // ab.v:79
+    case (<select=ab_op[9:0]['sd1+:2] expr_type=logic>)
+      2'd0:
+          {ABL, abl_co} = ((<select=<select=base[23:0]['sd0+:8] expr_type=logic>[(0)+:9] expr_type=logic>)+(9'd0))+(<select=abl_ci[(0)+:9] expr_type=logic>);
+      2'd1:
+          {ABL, abl_co} = ((<select=<select=base[23:0]['sd0+:8] expr_type=logic>[(0)+:24] expr_type=logic>)+(XY[23:0]))+(<select=abl_ci[(0)+:24] expr_type=logic>);
+      2'd2:
+          {ABL, abl_co} = ((<select=<select=base[23:0]['sd0+:8] expr_type=logic>[(0)+:9] expr_type=logic>)+(<select=DI[7:0][(0)+:9] expr_type=logic>))+(<select=abl_ci[(0)+:9] expr_type=logic>);
+      2'd3:
+          {ABL, abl_co} = ((XY[23:0])+(<select=DI[7:0][(0)+:24] expr_type=logic>))+(<select=abl_ci[(0)+:24] expr_type=logic>);
+    endcase
+always  /* ab.v:57 in cpu.ab */
+  (* _ivl_schedule_push = 'sd1 *)
+  @(_ivl_12)  // ab.v:57
+    case (<select=ab_op[9:0]['sd3+:2] expr_type=logic>)
+      2'd0:
+          {base} = {8'd0, S[15:0]};
+      2'd1:
+          {base} = PC[23:0];
+      2'd2:
+          if ((ABWDTH)==(1'd1))
+              {base} = {DI[7:0], DR[7:0], D3[7:0]};
+          else
+              {base} = {8'd0, DI[7:0], DR[7:0]};
+      2'd3:
+          {base} = ab_hold[23:0];
+    endcase
+always  /* ab.v:40 in cpu.ab */
+  @(_ivl_10)  // ab.v:40
+    if (RST)
+        begin
+            {PC} <= 24'd16777210;
+            {AB3} = 8'd255;
+        end
+    else
+        case (<select=ab_op[9:0]['sd5+:2] expr_type=logic>)
+          2'd1:
+              {PC} <= (AB[23:0])+(24'd1);
+          2'd2:
+              {PC} <= 24'd16777207;
+          2'd3:
+              {PC} <= 24'd16777213;
+          default: ;
+        endcase
+always  /* ab.v:33 in cpu.ab */
+  @(_ivl_10)  // ab.v:33
+    if (<select=ab_op[9:0]['sd7+:1] expr_type=logic>)
+        {ab_hold} = AB[23:0];
+always  /* alu.v:36 in cpu.alu */
+  (* _ivl_schedule_push = 'sd1 *)
+  @(_ivl_8)  // alu.v:36
+    begin
+        case (RWDTH[1:0])
+          <R_24=2'd2, wid=2>:
+              {MEM} = {DR[7:0], D3[7:0], D4[7:0]};
+          <R_16=2'd1, wid=2>:
+              {MEM} = {8'd0, DR[7:0], D3[7:0]};
+          default:
+              {MEM} = {8'd0, 8'd0, DR[7:0]};
+        endcase
+        casez (<select=alu_op[8:0]['sd4+:3] expr_type=logic>)
+          3'b0z0:
+              {alu_ai} = R[23:0];
+          3'b0z1:
+              {alu_ai} = MEM[23:0];
+          3'd4:
+              {alu_ai} = (R[23:0])|(MEM[23:0]);
+          3'd5:
+              {alu_ai} = (R[23:0])&(MEM[23:0]);
+          3'd6:
+              {alu_ai} = (R[23:0])^(MEM[23:0]);
+          3'd7:
+              {alu_ai} = <select=S[15:0][(0)+:24] expr_type=logic>;
+        endcase
+        casez (<select=alu_op[8:0]['sd2+:2] expr_type=logic>)
+          2'd0:
+              {alu_bi} = 24'sd0;
+          2'd1:
+              {alu_bi} = MEM[23:0];
+          2'd2:
+              {alu_bi} = 24'sd-1;
+          2'd3:
+              {alu_bi} = ~(MEM[23:0]);
+        endcase
+        casez (<select=alu_op[8:0]['sd0+:2] expr_type=logic>)
+          2'd0:
+              {alu_ci} = 1'sd0;
+          2'd1:
+              {alu_ci} = 1'sd-1;
+          2'd2:
+              {alu_ci} = C;
+          2'd3:
+              {alu_ci} = 1'sd0;
+        endcase
+        {alu_out, alu_C} = ((<select=alu_ai[23:0][(0)+:25] expr_type=logic>)+(<select=alu_bi[23:0][(0)+:25] expr_type=logic>))+(<select=alu_ci[(0)+:25] expr_type=logic>);
+        {alu_si} = (C)&(<select=alu_op[8:0]['sd0+:1] expr_type=logic>);
+        if (shift)
+            if (right)
+                {alu_C, alu_out} = {alu_si, alu_out[23:0]};
+            else
+                {alu_out, alu_C} = {alu_out[23:0], alu_si};
+        else
+            if (right)
+                {alu_out} = <select=DI[7:0][(0)+:24] expr_type=logic>;
+        {alu_N} = ((RWDTH[1:0])==(<R_24=2'd2, wid=2>)) ? (<select=alu_out[23:0]['sd23+:1] expr_type=logic>) : (((RWDTH[1:0])==(<R_16=2'd1, wid=2>)) ? (<select=alu_out[23:0]['sd15+:1] expr_type=logic>) : (<select=alu_out[23:0]['sd7+:1] expr_type=logic>));
+        {alu_V} = ((RWDTH[1:0])==(<R_24=2'd2, wid=2>)) ? ((((<select=alu_ai[23:0]['sd23+:1] expr_type=logic>)^(<select=alu_bi[23:0]['sd23+:1] expr_type=logic>))^(alu_C))^(alu_N)) : (((RWDTH[1:0])==(<R_16=2'd1, wid=2>)) ? ((((<select=alu_ai[23:0]['sd15+:1] expr_type=logic>)^(<select=alu_bi[23:0]['sd15+:1] expr_type=logic>))^(alu_C))^(alu_N)) : ((((<select=alu_ai[23:0]['sd7+:1] expr_type=logic>)^(<select=alu_bi[23:0]['sd7+:1] expr_type=logic>))^(alu_C))^(alu_N)));
+    end
+always  /* regfile.v:73 in cpu.regfile */
+  @(_ivl_10)  // regfile.v:73
+    if (variation)
+        {regs[word='sd3]} = 24'd6619728;
+always  /* regfile.v:65 in cpu.regfile */
+  @(_ivl_10)  // regfile.v:65
+    if (txs)
+        {S} <= <select=src[23:0]['sd0+:16] expr_type=logic>;
+    else
+        if (push)
+            {S} <= (S[15:0])-(16'd1);
+        else
+            if (pull)
+                {S} <= (S[15:0])+(16'd1);
+always  /* regfile.v:56 in cpu.regfile */
+  @(_ivl_10)  // regfile.v:56
+    if (reg_we)
+        begin
+            {regs[word=<select=reg_dst[1:0][(0)+:4] expr_type=logic>]} <= dst[23:0];
+            $display("REG[%s] <= %h", ((reg_dst[1:0])==(<DST_X=2'd1, wid=2>)) ? ("X") : (((reg_dst[1:0])==(<DST_Y=2'd2, wid=2>)) ? ("Y") : (((reg_dst[1:0])==(<DST_A=2'd3, wid=2>)) ? ("A") : ("?"))), dst[23:0]);
+        end
+initial  /* regfile.v:34 in cpu.regfile */
+  begin
+      {regs[word='sd0]} = 24'sd0;
+      {regs[word='sd1]} = 24'sd1;
+      {regs[word='sd2]} = 24'sd2;
+      {regs[word='sd3]} = 24'd0;
+      {S} = 16'd65535;
+  end
