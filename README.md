@@ -71,7 +71,7 @@ bytes as storage in your test to check the results.
 
 The opcode HLT (#$db) will end the simulation.
 
-# Built upon verilog-65C2402-fsm
+## Built upon verilog-65C2402-fsm
 
 This variation is built upon my 65C2402, which only grows the address bus while leaving the registers alone.
 The threads from verilog-65C24T8-fsm are *not* included in this variation.
